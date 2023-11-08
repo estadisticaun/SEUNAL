@@ -2,6 +2,7 @@
 title: "Sistema de Estadísticas Oficiales de la UNAL"
 author: "<br><br>Alberto Rodríguez Rodríguez"
 format: revealjs
+output-dir: docs
 editor: visual
 ---
 

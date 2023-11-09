@@ -1,26 +1,277 @@
 ---
 title: "Sistema de Estadísticas Oficiales de la UNAL"
-author: "<br><br>Alberto Rodríguez Rodríguez"
-format: revealjs
-output-dir: docs
+author: "<br>Alberto Rodríguez Rodríguez<br>albrodriguezr@unal.edu.co<br><br>Dirección Nacional de Planeación y Estadística<br>Universidad Nacional de Colombia"
+format: 
+  revealjs:
+    code-fold: true
+    logo: "Imagenes/logoUNAL.jpg"
+    #footer: "[Estadísticas UNAL](https://estadisticas.unal.edu.co/home/)"
+    theme: serif
+    css: Styles.css
 editor: visual
 ---
+## QR de la presentación
 
-## Quarto
+<br>
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+![](Imagenes/QRPresentacion.png){fig-align="center" height=480}
 
-## Bullets
+## ¿Qué es el Sistema de Estadísticas Oficiales de la UNAL?
 
-When you click the **Render** button a document will be generated that includes:
+<br>
 
--   Content authored with markdown
--   Output from executable code
+El sistema de Estadísticas Oficiales de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas oficiales, así como al uso y extracción del valor contenido en los datos institucionales.
 
-## Code
+## Modelo Gestión Estadística P2C-T
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+![](Imagenes/Modelo.png){fig-align="center"}
+
+## Planeación Estadística (P)
+
+![](Imagenes/Planeacion.png){fig-align="center"}
+
+## Plan Estadístico Institucional{.smaller}
+<br>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+[![](Imagenes/PlanE.jpg)](https://estadisticaun.github.io/PlanE/)
+:::
+
+::: {.column width="60%"}
+<h6 style="color:red;"> Líneas Estratégicas del Plan</h6>
+- Líneamientos conceptuales
+- Producción estadística
+- Herramientas tecnológicas
+- Cultura estadística
+
+<br>
+
+<h6 style="color:red;">Duración del Plan</h6>
+<em>Se desarrollará en 3 planes rectorales (9 años). <u>A la fecha, se ha avanzado en un 60 %.</u></em>
+:::
+::::
+
+## Conceptualización (C)
+
+![](Imagenes/Conceptualizacion.png){fig-align="center"}
+
+## Documentos Conceptuales {.smaller}
+
+Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y disposición de estadísticas e indicadores en el contexto público.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[![](Imagenes/GesInforma.jpg){height=500}](https://estadisticaun.github.io/L_Conceptual/)
+:::
+
+::: {.column width="50%"}
+
+[![](Imagenes/EstadisticasInd.jpg){height=500}](https://estadisticaun.github.io/L_Conceptual1/)
+
+:::
+
+::::
+
+
+## Producción Estadística (P)
+
+![](Imagenes/Produccion.png){fig-align="center"}
+
+## Página de Estadísticas de la UNAL {.smaller}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+[![](Imagenes/PaginaEsts.jpg){height=350}](https://estadisticas.unal.edu.co/home/)
+
+<h6 style="color:red;"> Estadísticas Oficiales Disponibles</h6>
+
+Aspirantes, admitidos, matriculados, graduados, docentes, personal administrativo, así como enlaces a información oficial de investigación, extensión e innovación e información financiera.
+
+:::
+
+::: {.column width="30%"}
+
+<br>
+
+<h6 style="color:red;">Mecanismos de difusión</h6>
+
+- Dashboards.
+- Boletines web estadísticos.
+
+:::
+
+::::
+
+
+## Herramientas Tecnológicas (T)
+
+![](Imagenes/Tecnologia.png){fig-align="center"}
+
+## El software R, protagonista en la gestión estadística en la UNAL
+
+![](Imagenes/Rprotagonista.png){fig-align="center"}
+
+## El Paquete de R UnalR
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+[![](Imagenes/UnalR.png){fig-align="left" height=300}](https://estadisticaun.github.io/UnalR/index.html)
+
+El paquete [UnalR](https://estadisticaun.github.io/UnalR/index.html) proporciona métodos y herramientas para la visualización de estadísticas.
+
+
+:::
+
+::: {.column width="60%"}
+
+<br>
+
+<h6 style="color:red;">Aporte Central</h6>
+<br>
+Conjunto de funciones orientadas a la visualización **<u>estática e interactiva</u>** haciendo uso de funciones únicas derivadas de los paquetes highcharter, plotly, leaflet, DT, gt y ggplot2, principalmente.
+
+:::
+
+::::
+
+## Ejemplos Uso Paquete Unal R {.smaller}
+
+::: {.panel-tabset}
+
+### Serie 1
 
 ```{r}
-1 + 1
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+
+Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, 
+        frecuencia = list(c(2009:2023), c(1:2)),
+        intervalo = list(c(2009, 1), c(2023, 1)),
+        datos = UnalData::Matriculados,
+        textNA = "Sin información") %>% 
+   Plot.Series(categoria = "TIPO_NIVEL", 
+              #colores = c("#8cc63f"), # verde, Total 
+              titulo = "Evolución histórica del número total de matriculados", 
+              labelY = "Número de matriculados",
+              ylim = c(0,NaN),
+              libreria = c("highcharter"), 
+              estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE")) 
 ```
+
+
+### Serie 2
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+
+Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, 
+        frecuencia = list(c(2009:2023), c(1:2)),
+        intervalo = list(c(2009, 1), c(2023, 1)),
+        datos = UnalData::Matriculados,
+        textNA = "Sin información") %>% 
+   Plot.Series(categoria = "TIPO_NIVEL", 
+              #colores = c("#8cc63f"), # verde, Total 
+              titulo = "Evolución histórica del número total de matriculados", 
+              labelY = "Número de matriculados",
+              ylim = c(0,NaN),
+              libreria = c("plotly"), 
+              estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE")) 
+```
+
+### Serie 3
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+
+Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, 
+        frecuencia = list(c(2009:2023), c(1:2)),
+        intervalo = list(c(2009, 1), c(2023, 1)),
+        datos = UnalData::Matriculados,
+        textNA = "Sin información") %>% 
+   Plot.Series(categoria = "TIPO_NIVEL", 
+              colores = c("#8cc63f", "#CC241D"), 
+              titulo = "Evolución histórica del número total de matriculados",
+              labelY = "Número de matriculados\n",
+              estatico = TRUE,
+              ylim = c(0,NaN),
+              estilo       = list(
+              LegendTitle = "Nivel", gg.Tema = 5,
+               gg.Legend = list(legend.position = "bottom", legend.direction = "horizontal"),
+               gg.Repel  = list(overlapping = TRUE, size = 3)
+              ) )
+```
+
+### Mapa 1
+
+### Mapa 2
+
+### Mapa 3
+
+### Tabla 1
+
+### Tabla 2
+
+:::
+
+## Cultura Estadística (C)
+
+![](Imagenes/Cultura.png){fig-align="center" height=580}
+
+## Acciones para fomentar la cultura estadística {.smaller}
+
+- Socialización al interior de las entidades
+Implementación de campañas en redes sociales
+- Construcción y disposición de videos
+- Disposición de Souvenirs
+- Participación en eventos nacionales e internacionales
+
+## Información de Contacto{.smaller}
+
+<br>
+
+[Oficina Nacional de Estadística - UNAL](https://estadisticas.unal.edu.co/home/)
+
+[Dirección Nacional de Planeación y Estadística](https://planeacion.unal.edu.co/home/)
+
+ Mail: estadistica_nal@unal.edu.co
+
+Telefóno:  (+57 1) 316 5000 ext: 18519
+
+Ubicación:  Carrera 45 # 26-58, oficina 506
+
+Edif. Uriel Gutiérrez
+
+Bogotá D.C., Colombia
+

@@ -10,7 +10,7 @@
 <link href="Presentacion_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <meta name="author" content="  Alberto Rodríguez Rodríguez">
+  <meta name="author" content=" Alberto Rodríguez Rodríguez albrodriguezr@unal.edu.co  Dirección Nacional de Planeación y Estadística Universidad Nacional de Colombia">
   <title>Sistema de Estadísticas Oficiales de la UNAL</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,8 +29,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="Presentacion_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="Styles.css">
   <link href="Presentacion_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="Presentacion_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="Presentacion_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -319,6 +385,56 @@
       margin-right: 0; 
     }
   </style>
+  <script src="Presentacion_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+  <script src="Presentacion_files/libs/jquery-3.5.1/jquery.min.js"></script>
+  <script src="Presentacion_files/libs/proj4js-2.3.15/proj4.js"></script>
+  <link href="Presentacion_files/libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+  <script src="Presentacion_files/libs/highcharts-9.3.1/highcharts.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/highcharts-3d.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/highcharts-more.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/stock.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/map.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/data.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/exporting.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/drilldown.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/item-series.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/annotations.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/export-data.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/funnel.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/heatmap.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/treemap.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/sankey.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/organization.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/sunburst.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/vector.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/xrange.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/tilemap.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/venn.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/gantt.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/timeline.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/bullet.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/lollipop.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/series-label.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/plugins/motion.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/custom/reset.js"></script>
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/boost.js"></script>
+  <script src="Presentacion_files/libs/highchart-binding-0.9.4/highchart.js"></script>
+  <script src="Presentacion_files/libs/plotly-binding-4.10.3/plotly.js"></script>
+  <script src="Presentacion_files/libs/typedarray-0.1/typedarray.min.js"></script>
+  <link href="Presentacion_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+  <script src="Presentacion_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <link href="Presentacion_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+  <script src="Presentacion_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+  <script src="Presentacion_files/libs/plotly-locale-es-2.11.1/es.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -330,33 +446,284 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<br><br>Alberto Rodríguez Rodríguez 
+<br>Alberto Rodríguez Rodríguez<br>albrodriguezr@unal.edu.co<br><br>Dirección Nacional de Planeación y Estadística<br>Universidad Nacional de Colombia 
 </div>
 </div>
 </div>
 
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
+<section id="qr-de-la-presentación" class="slide level2">
+<h2>QR de la presentación</h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Imagenes/QRPresentacion.png" height="480"></p>
+</figure>
+</div>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="qué-es-el-sistema-de-estadísticas-oficiales-de-la-unal" class="slide level2">
+<h2>¿Qué es el Sistema de Estadísticas Oficiales de la UNAL?</h2>
+<p><br></p>
+<p>El sistema de Estadísticas Oficiales de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas oficiales, así como al uso y extracción del valor contenido en los datos institucionales.</p>
+</section>
+<section id="modelo-gestión-estadística-p2c-t" class="slide level2">
+<h2>Modelo Gestión Estadística P2C-T</h2>
+
+<img data-src="Imagenes/Modelo.png" class="r-stretch quarto-figure-center"></section>
+<section id="planeación-estadística-p" class="slide level2">
+<h2>Planeación Estadística (P)</h2>
+
+<img data-src="Imagenes/Planeacion.png" class="r-stretch quarto-figure-center"></section>
+<section id="plan-estadístico-institucional" class="slide level2 smaller">
+<h2>Plan Estadístico Institucional</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://estadisticaun.github.io/PlanE/"><img data-src="Imagenes/PlanE.jpg"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<h6 style="color:red;">
+Líneas Estratégicas del Plan
+</h6>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li>Líneamientos conceptuales</li>
+<li>Producción estadística</li>
+<li>Herramientas tecnológicas</li>
+<li>Cultura estadística</li>
+</ul>
+<p><br></p>
+<h6 style="color:red;">
+Duración del Plan
+</h6>
+<p><em>Se desarrollará en 3 planes rectorales (9 años). <u>A la fecha, se ha avanzado en un 60 %.</u></em></p>
+</div>
+</div>
+</section>
+<section id="conceptualización-c" class="slide level2">
+<h2>Conceptualización (C)</h2>
+
+<img data-src="Imagenes/Conceptualizacion.png" class="r-stretch quarto-figure-center"></section>
+<section id="documentos-conceptuales" class="slide level2 smaller">
+<h2>Documentos Conceptuales</h2>
+<p>Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y disposición de estadísticas e indicadores en el contexto público.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://estadisticaun.github.io/L_Conceptual/"><img data-src="Imagenes/GesInforma.jpg" height="500"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://estadisticaun.github.io/L_Conceptual1/"><img data-src="Imagenes/EstadisticasInd.jpg" height="500"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="producción-estadística-p" class="slide level2">
+<h2>Producción Estadística (P)</h2>
+
+<img data-src="Imagenes/Produccion.png" class="r-stretch quarto-figure-center"></section>
+<section id="página-de-estadísticas-de-la-unal" class="slide level2 smaller">
+<h2>Página de Estadísticas de la UNAL</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://estadisticas.unal.edu.co/home/"><img data-src="Imagenes/PaginaEsts.jpg" height="350"></a></p>
+</figure>
+</div>
+<h6 style="color:red;">
+Estadísticas Oficiales Disponibles
+</h6>
+<p>Aspirantes, admitidos, matriculados, graduados, docentes, personal administrativo, así como enlaces a información oficial de investigación, extensión e innovación e información financiera.</p>
+</div><div class="column" style="width:30%;">
+<p><br></p>
+<h6 style="color:red;">
+Mecanismos de difusión
+</h6>
+<ul>
+<li>Dashboards.</li>
+<li>Boletines web estadísticos.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="herramientas-tecnológicas-t" class="slide level2">
+<h2>Herramientas Tecnológicas (T)</h2>
+
+<img data-src="Imagenes/Tecnologia.png" class="r-stretch quarto-figure-center"></section>
+<section id="el-software-r-protagonista-en-la-gestión-estadística-en-la-unal" class="slide level2">
+<h2>El software R, protagonista en la gestión estadística en la UNAL</h2>
+
+<img data-src="Imagenes/Rprotagonista.png" class="r-stretch quarto-figure-center"></section>
+<section id="el-paquete-de-r-unalr" class="slide level2">
+<h2>El Paquete de R UnalR</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://estadisticaun.github.io/UnalR/index.html"><img data-src="Imagenes/UnalR.png" height="300"></a></p>
+</figure>
+</div>
+<p>El paquete <a href="https://estadisticaun.github.io/UnalR/index.html">UnalR</a> proporciona métodos y herramientas para la visualización de estadísticas.</p>
+</div><div class="column" style="width:60%;">
+<p><br></p>
+<h6 style="color:red;">
+Aporte Central
+</h6>
+<p><br> Conjunto de funciones orientadas a la visualización <strong><u>estática e interactiva</u></strong> haciendo uso de funciones únicas derivadas de los paquetes highcharter, plotly, leaflet, DT, gt y ggplot2, principalmente.</p>
+</div>
+</div>
+</section>
+<section id="ejemplos-uso-paquete-unal-r" class="slide level2 smaller">
+<h2>Ejemplos Uso Paquete Unal R</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Serie 1</a></li><li><a href="#tabset-1-2">Serie 2</a></li><li><a href="#tabset-1-3">Serie 3</a></li><li><a href="#tabset-1-4">Mapa 1</a></li><li><a href="#tabset-1-5">Mapa 2</a></li><li><a href="#tabset-1-6">Mapa 3</a></li><li><a href="#tabset-1-7">Tabla 1</a></li><li><a href="#tabset-1-8">Tabla 2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<details>
+<summary>Ver código</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Librerías requeridas</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(UnalData)</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">library</span>(UnalR)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="fu">Agregar</span>(TIPO_NIVEL <span class="sc">~</span> YEAR <span class="sc">+</span> SEMESTRE, </span>
+<span id="cb1-8"><a href="#cb1-8"></a>        <span class="at">frecuencia =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">2009</span><span class="sc">:</span><span class="dv">2023</span>), <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)),</span>
+<span id="cb1-9"><a href="#cb1-9"></a>        <span class="at">intervalo =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">2009</span>, <span class="dv">1</span>), <span class="fu">c</span>(<span class="dv">2023</span>, <span class="dv">1</span>)),</span>
+<span id="cb1-10"><a href="#cb1-10"></a>        <span class="at">datos =</span> UnalData<span class="sc">::</span>Matriculados,</span>
+<span id="cb1-11"><a href="#cb1-11"></a>        <span class="at">textNA =</span> <span class="st">"Sin información"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-12"><a href="#cb1-12"></a>   <span class="fu">Plot.Series</span>(<span class="at">categoria =</span> <span class="st">"TIPO_NIVEL"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13"></a>              <span class="co">#colores = c("#8cc63f"), # verde, Total </span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>              <span class="at">titulo =</span> <span class="st">"Evolución histórica del número total de matriculados"</span>, </span>
+<span id="cb1-15"><a href="#cb1-15"></a>              <span class="at">labelY =</span> <span class="st">"Número de matriculados"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16"></a>              <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="cn">NaN</span>),</span>
+<span id="cb1-17"><a href="#cb1-17"></a>              <span class="at">libreria =</span> <span class="fu">c</span>(<span class="st">"highcharter"</span>), </span>
+<span id="cb1-18"><a href="#cb1-18"></a>              <span class="at">estilo =</span> <span class="fu">list</span>(<span class="at">hc.Tema =</span> <span class="dv">1</span>, <span class="at">hc.Slider =</span> <span class="cn">FALSE</span>, <span class="at">hc.Credits =</span> <span class="st">"DNPE"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1895ad223460d7182fbb" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-1895ad223460d7182fbb">{"x":{"hc_opts":{"chart":{"reflow":true,"type":"datetime","zoomType":"x"},"title":{"text":"Evolución histórica del número total de matriculados","style":{"fontWeight":"bold","fontSize":"22px","color":"#333333","useHTML":true}},"yAxis":{"title":{"text":"Número de matriculados","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"type":"linear","reversed":false,"lineColor":"#787878","opposite":false,"lineWidth":1,"min":0,"max":null,"labels":{"format":"{value}","style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"PlotSeries_Clase"},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"line":{"marker":{"enabled":false,"symbol":"square","radius":1}}},"series":[{"name":"Postgrado","data":[{"Fecha":"2009-1","Clase":"Postgrado","Y":6135,"Extra":13.6,"y":6135,"name":"2009-1"},{"Fecha":"2009-2","Clase":"Postgrado","Y":6371,"Extra":14.1,"y":6371,"name":"2009-2"},{"Fecha":"2010-1","Clase":"Postgrado","Y":7439,"Extra":15.9,"y":7439,"name":"2010-1"},{"Fecha":"2010-2","Clase":"Postgrado","Y":7343,"Extra":15.8,"y":7343,"name":"2010-2"},{"Fecha":"2011-1","Clase":"Postgrado","Y":8655,"Extra":17.7,"y":8655,"name":"2011-1"},{"Fecha":"2011-2","Clase":"Postgrado","Y":8538,"Extra":17.5,"y":8538,"name":"2011-2"},{"Fecha":"2012-1","Clase":"Postgrado","Y":8556,"Extra":17.1,"y":8556,"name":"2012-1"},{"Fecha":"2012-2","Clase":"Postgrado","Y":8147,"Extra":16.4,"y":8147,"name":"2012-2"},{"Fecha":"2013-1","Clase":"Postgrado","Y":8878,"Extra":17.3,"y":8878,"name":"2013-1"},{"Fecha":"2013-2","Clase":"Postgrado","Y":8721,"Extra":17.1,"y":8721,"name":"2013-2"},{"Fecha":"2014-1","Clase":"Postgrado","Y":9081,"Extra":17.7,"y":9081,"name":"2014-1"},{"Fecha":"2014-2","Clase":"Postgrado","Y":8790,"Extra":17,"y":8790,"name":"2014-2"},{"Fecha":"2015-1","Clase":"Postgrado","Y":9366,"Extra":17.8,"y":9366,"name":"2015-1"},{"Fecha":"2015-2","Clase":"Postgrado","Y":9268,"Extra":17.6,"y":9268,"name":"2015-2"},{"Fecha":"2016-1","Clase":"Postgrado","Y":10027,"Extra":18.7,"y":10027,"name":"2016-1"},{"Fecha":"2016-2","Clase":"Postgrado","Y":9653,"Extra":18.1,"y":9653,"name":"2016-2"},{"Fecha":"2017-1","Clase":"Postgrado","Y":9983,"Extra":18.5,"y":9983,"name":"2017-1"},{"Fecha":"2017-2","Clase":"Postgrado","Y":9564,"Extra":17.9,"y":9564,"name":"2017-2"},{"Fecha":"2018-1","Clase":"Postgrado","Y":9752,"Extra":18.1,"y":9752,"name":"2018-1"},{"Fecha":"2018-2","Clase":"Postgrado","Y":9308,"Extra":17.3,"y":9308,"name":"2018-2"},{"Fecha":"2019-1","Clase":"Postgrado","Y":8683,"Extra":16.3,"y":8683,"name":"2019-1"},{"Fecha":"2019-2","Clase":"Postgrado","Y":8704,"Extra":16,"y":8704,"name":"2019-2"},{"Fecha":"2020-1","Clase":"Postgrado","Y":7282,"Extra":16.7,"y":7282,"name":"2020-1"},{"Fecha":"2020-2","Clase":"Postgrado","Y":7893,"Extra":14.3,"y":7893,"name":"2020-2"},{"Fecha":"2021-1","Clase":"Postgrado","Y":8269,"Extra":14.2,"y":8269,"name":"2021-1"},{"Fecha":"2021-2","Clase":"Postgrado","Y":7317,"Extra":12.8,"y":7317,"name":"2021-2"},{"Fecha":"2022-1","Clase":"Postgrado","Y":7036,"Extra":12.5,"y":7036,"name":"2022-1"},{"Fecha":"2022-2","Clase":"Postgrado","Y":6979,"Extra":12.2,"y":6979,"name":"2022-2"},{"Fecha":"2023-1","Clase":"Postgrado","Y":7190,"Extra":12.6,"y":7190,"name":"2023-1"}],"type":"line","color":"#FF0000B3","zoomType":{"enabled":false},"resetZoomButton":true},{"name":"Pregrado","data":[{"Fecha":"2009-1","Clase":"Pregrado","Y":39065,"Extra":86.40000000000001,"y":39065,"name":"2009-1"},{"Fecha":"2009-2","Clase":"Pregrado","Y":38680,"Extra":85.90000000000001,"y":38680,"name":"2009-2"},{"Fecha":"2010-1","Clase":"Pregrado","Y":39314,"Extra":84.09999999999999,"y":39314,"name":"2010-1"},{"Fecha":"2010-2","Clase":"Pregrado","Y":39084,"Extra":84.2,"y":39084,"name":"2010-2"},{"Fecha":"2011-1","Clase":"Pregrado","Y":40225,"Extra":82.3,"y":40225,"name":"2011-1"},{"Fecha":"2011-2","Clase":"Pregrado","Y":40241,"Extra":82.5,"y":40241,"name":"2011-2"},{"Fecha":"2012-1","Clase":"Pregrado","Y":41340,"Extra":82.90000000000001,"y":41340,"name":"2012-1"},{"Fecha":"2012-2","Clase":"Pregrado","Y":41505,"Extra":83.59999999999999,"y":41505,"name":"2012-2"},{"Fecha":"2013-1","Clase":"Pregrado","Y":42428,"Extra":82.7,"y":42428,"name":"2013-1"},{"Fecha":"2013-2","Clase":"Pregrado","Y":42284,"Extra":82.90000000000001,"y":42284,"name":"2013-2"},{"Fecha":"2014-1","Clase":"Pregrado","Y":42293,"Extra":82.3,"y":42293,"name":"2014-1"},{"Fecha":"2014-2","Clase":"Pregrado","Y":42837,"Extra":83,"y":42837,"name":"2014-2"},{"Fecha":"2015-1","Clase":"Pregrado","Y":43184,"Extra":82.2,"y":43184,"name":"2015-1"},{"Fecha":"2015-2","Clase":"Pregrado","Y":43409,"Extra":82.40000000000001,"y":43409,"name":"2015-2"},{"Fecha":"2016-1","Clase":"Pregrado","Y":43555,"Extra":81.3,"y":43555,"name":"2016-1"},{"Fecha":"2016-2","Clase":"Pregrado","Y":43798,"Extra":81.90000000000001,"y":43798,"name":"2016-2"},{"Fecha":"2017-1","Clase":"Pregrado","Y":43897,"Extra":81.5,"y":43897,"name":"2017-1"},{"Fecha":"2017-2","Clase":"Pregrado","Y":43890,"Extra":82.09999999999999,"y":43890,"name":"2017-2"},{"Fecha":"2018-1","Clase":"Pregrado","Y":44275,"Extra":81.90000000000001,"y":44275,"name":"2018-1"},{"Fecha":"2018-2","Clase":"Pregrado","Y":44413,"Extra":82.7,"y":44413,"name":"2018-2"},{"Fecha":"2019-1","Clase":"Pregrado","Y":44621,"Extra":83.7,"y":44621,"name":"2019-1"},{"Fecha":"2019-2","Clase":"Pregrado","Y":45580,"Extra":84,"y":45580,"name":"2019-2"},{"Fecha":"2020-1","Clase":"Pregrado","Y":36358,"Extra":83.3,"y":36358,"name":"2020-1"},{"Fecha":"2020-2","Clase":"Pregrado","Y":47275,"Extra":85.7,"y":47275,"name":"2020-2"},{"Fecha":"2021-1","Clase":"Pregrado","Y":50162,"Extra":85.8,"y":50162,"name":"2021-1"},{"Fecha":"2021-2","Clase":"Pregrado","Y":49789,"Extra":87.2,"y":49789,"name":"2021-2"},{"Fecha":"2022-1","Clase":"Pregrado","Y":49433,"Extra":87.5,"y":49433,"name":"2022-1"},{"Fecha":"2022-2","Clase":"Pregrado","Y":50111,"Extra":87.8,"y":50111,"name":"2022-2"},{"Fecha":"2023-1","Clase":"Pregrado","Y":49868,"Extra":87.40000000000001,"y":49868,"name":"2023-1"}],"type":"line","color":"#00FFFFB3","zoomType":{"enabled":false},"resetZoomButton":true}],"xAxis":{"type":"category","title":{"text":"Periodo","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"categories":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1","2021-2","2022-1","2022-2","2023-1"],"align":"center","lineColor":"#787878","opposite":false,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"legend":{"enabled":true,"align":"center","verticalAlign":"bottom","layout":"horizontal","title":{"text":"","style":{"textDecoration":"underline"}},"x":42,"y":0,"itemStyle":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"tooltip":{"crosshairs":true,"shared":true,"pointFormat":"<span style=\"color:{series.color}\">● <\/span><b>{series.name}: {point.y}<\/b> ({point.Extra}%)<br/>","backgroundColor":"rgba(186,174,174,0.7)","borderColor":"#6D6666","borderWidth":5,"useHTML":true},"subtitle":{"text":"DNPE","align":"left","style":{"color":"#2B908F","fontWeight":"bold"}}},"theme":{"colors":["#00AACC","#FF4E00","#B90000","#5F9B0A","#CD6723"],"chart":{"backgroundColor":{"linearGradient":[0,0,0,150],"stops":[[0,"#CAE1F4"],[1,"#EEEEEE"]]},"style":{"fontFamily":"Open Sans"}},"title":{"align":"left"},"subtitle":{"align":"left"},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Menú Contextual del Gráfico","decimalPoint":".","downloadCSV":"Descargar CSV","downloadJPEG":"Descargar imagen JPEG","downloadPDF":"Descargar documento PDF","downloadPNG":"Descargar imagen PNG","downloadSVG":"Descargar imagen vectorial SVG","downloadXLS":"Descargar XLS","drillUpText":"<< Volver a {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Cargando...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No hay información para mostrar","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Imprimir gráfico","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"Ver tabla de datos","viewFullscreen":"Ver en pantalla completa","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Open+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<details>
+<summary>Ver código</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Librerías requeridas</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">library</span>(UnalData)</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">library</span>(UnalR)</span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">Agregar</span>(TIPO_NIVEL <span class="sc">~</span> YEAR <span class="sc">+</span> SEMESTRE, </span>
+<span id="cb2-8"><a href="#cb2-8"></a>        <span class="at">frecuencia =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">2009</span><span class="sc">:</span><span class="dv">2023</span>), <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)),</span>
+<span id="cb2-9"><a href="#cb2-9"></a>        <span class="at">intervalo =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">2009</span>, <span class="dv">1</span>), <span class="fu">c</span>(<span class="dv">2023</span>, <span class="dv">1</span>)),</span>
+<span id="cb2-10"><a href="#cb2-10"></a>        <span class="at">datos =</span> UnalData<span class="sc">::</span>Matriculados,</span>
+<span id="cb2-11"><a href="#cb2-11"></a>        <span class="at">textNA =</span> <span class="st">"Sin información"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-12"><a href="#cb2-12"></a>   <span class="fu">Plot.Series</span>(<span class="at">categoria =</span> <span class="st">"TIPO_NIVEL"</span>, </span>
+<span id="cb2-13"><a href="#cb2-13"></a>              <span class="co">#colores = c("#8cc63f"), # verde, Total </span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>              <span class="at">titulo =</span> <span class="st">"Evolución histórica del número total de matriculados"</span>, </span>
+<span id="cb2-15"><a href="#cb2-15"></a>              <span class="at">labelY =</span> <span class="st">"Número de matriculados"</span>,</span>
+<span id="cb2-16"><a href="#cb2-16"></a>              <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="cn">NaN</span>),</span>
+<span id="cb2-17"><a href="#cb2-17"></a>              <span class="at">libreria =</span> <span class="fu">c</span>(<span class="st">"plotly"</span>), </span>
+<span id="cb2-18"><a href="#cb2-18"></a>              <span class="at">estilo =</span> <span class="fu">list</span>(<span class="at">hc.Tema =</span> <span class="dv">1</span>, <span class="at">hc.Slider =</span> <span class="cn">FALSE</span>, <span class="at">hc.Credits =</span> <span class="st">"DNPE"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-3afc5209e7794465b8de" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-3afc5209e7794465b8de">{"x":{"visdat":{"7ec479c01775":["function () ","plotlyVisDat"]},"cur_data":"7ec479c01775","attrs":{"7ec479c01775":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1","2021-2","2022-1","2022-2","2023-1"],"y":[6135,6371,7439,7343,8655,8538,8556,8147,8878,8721,9081,8790,9366,9268,10027,9653,9983,9564,9752,9308,8683,8704,7282,7893,8269,7317,7036,6979,7190],"text":[13.6,14.1,15.9,15.800000000000001,17.699999999999999,17.5,17.100000000000001,16.399999999999999,17.300000000000001,17.100000000000001,17.699999999999999,17,17.800000000000001,17.600000000000001,18.699999999999999,18.100000000000001,18.5,17.899999999999999,18.100000000000001,17.300000000000001,16.300000000000001,16,16.699999999999999,14.300000000000001,14.199999999999999,12.800000000000001,12.5,12.199999999999999,12.6],"name":"Postgrado","type":"scatter","mode":"markers+lines","line":{"color":"#FF0000B3","width":3},"marker":{"color":"#FF0000B3","size":6,"line":{"width":1.2,"color":"#787878"}},"hovertemplate":"%{y} (%{text:.2s}%)","textposition":"outside","inherit":true},"7ec479c01775.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1","2021-2","2022-1","2022-2","2023-1"],"y":[39065,38680,39314,39084,40225,40241,41340,41505,42428,42284,42293,42837,43184,43409,43555,43798,43897,43890,44275,44413,44621,45580,36358,47275,50162,49789,49433,50111,49868],"text":[86.400000000000006,85.900000000000006,84.099999999999994,84.200000000000003,82.299999999999997,82.5,82.900000000000006,83.599999999999994,82.700000000000003,82.900000000000006,82.299999999999997,83,82.200000000000003,82.400000000000006,81.299999999999997,81.900000000000006,81.5,82.099999999999994,81.900000000000006,82.700000000000003,83.700000000000003,84,83.299999999999997,85.700000000000003,85.799999999999997,87.200000000000003,87.5,87.799999999999997,87.400000000000006],"name":"Pregrado","type":"scatter","mode":"markers+lines","line":{"color":"#00FFFFB3","width":3},"marker":{"color":"#00FFFFB3","size":6,"line":{"width":1.2,"color":"#787878"}},"hovertemplate":"%{y} (%{text:.2s}%)","textposition":"outside","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":{"text":"<b>Evolución histórica del número total de matriculados<\/b>","font":{"family":"Open Sans","size":24,"color":"#333333"},"y":0.95999999999999996},"xaxis":{"domain":[0,1],"automargin":true,"title":"Periodo","zeroline":false,"showline":true,"showgrid":false,"showticklabels":true,"linecolor":"#787878","linewidth":2.5,"autotick":false,"ticks":"outside","tickwidth":2.5,"ticklen":10,"tickcolor":"#CCCCCC","tickangle":-45,"tickfont":{"family":"Old Standard TT, serif","size":16,"color":"#525252"},"type":"category","categoryorder":"array","categoryarray":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1","2021-2","2022-1","2022-2","2023-1"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Número de matriculados","ticksuffix":"","zeroline":true,"autorange":[],"range":0,"showline":true,"showgrid":true,"showticklabels":true,"linecolor":"#787878","linewidth":3,"tickfont":{"family":"Old Standard TT, serif","size":16,"color":"#525252"},"separatethousands":true},"autosize":true,"showlegend":true,"legend":{"x":1,"y":0.5,"orientation":"v","traceorder":"normal","title":{"text":"<b><\/b>"}},"hovermode":"x unified","annotations":[{"x":0.20000000000000001,"y":1,"text":"","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":12,"color":"#CCCCCC"}},{"x":0.20000000000000001,"y":1,"text":"","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":12,"color":"#CCCCCC"}}]},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"locale":"es"},"data":[{"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1","2021-2","2022-1","2022-2","2023-1"],"y":[6135,6371,7439,7343,8655,8538,8556,8147,8878,8721,9081,8790,9366,9268,10027,9653,9983,9564,9752,9308,8683,8704,7282,7893,8269,7317,7036,6979,7190],"text":[13.6,14.1,15.9,15.800000000000001,17.699999999999999,17.5,17.100000000000001,16.399999999999999,17.300000000000001,17.100000000000001,17.699999999999999,17,17.800000000000001,17.600000000000001,18.699999999999999,18.100000000000001,18.5,17.899999999999999,18.100000000000001,17.300000000000001,16.300000000000001,16,16.699999999999999,14.300000000000001,14.199999999999999,12.800000000000001,12.5,12.199999999999999,12.6],"name":"Postgrado","type":"scatter","mode":"markers+lines","line":{"color":"#FF0000B3","width":3},"marker":{"color":"#FF0000B3","size":6,"line":{"color":"#787878","width":1.2}},"hovertemplate":["%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)"],"textposition":["outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside"],"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1","2021-2","2022-1","2022-2","2023-1"],"y":[39065,38680,39314,39084,40225,40241,41340,41505,42428,42284,42293,42837,43184,43409,43555,43798,43897,43890,44275,44413,44621,45580,36358,47275,50162,49789,49433,50111,49868],"text":[86.400000000000006,85.900000000000006,84.099999999999994,84.200000000000003,82.299999999999997,82.5,82.900000000000006,83.599999999999994,82.700000000000003,82.900000000000006,82.299999999999997,83,82.200000000000003,82.400000000000006,81.299999999999997,81.900000000000006,81.5,82.099999999999994,81.900000000000006,82.700000000000003,83.700000000000003,84,83.299999999999997,85.700000000000003,85.799999999999997,87.200000000000003,87.5,87.799999999999997,87.400000000000006],"name":"Pregrado","type":"scatter","mode":"markers+lines","line":{"color":"#00FFFFB3","width":3},"marker":{"color":"#00FFFFB3","size":6,"line":{"color":"#787878","width":1.2}},"hovertemplate":["%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)"],"textposition":["outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside"],"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-1-3">
+<div class="cell">
+<details>
+<summary>Ver código</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Librerías requeridas</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">library</span>(UnalData)</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">library</span>(UnalR)</span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">Agregar</span>(TIPO_NIVEL <span class="sc">~</span> YEAR <span class="sc">+</span> SEMESTRE, </span>
+<span id="cb3-8"><a href="#cb3-8"></a>        <span class="at">frecuencia =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">2009</span><span class="sc">:</span><span class="dv">2023</span>), <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)),</span>
+<span id="cb3-9"><a href="#cb3-9"></a>        <span class="at">intervalo =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">2009</span>, <span class="dv">1</span>), <span class="fu">c</span>(<span class="dv">2023</span>, <span class="dv">1</span>)),</span>
+<span id="cb3-10"><a href="#cb3-10"></a>        <span class="at">datos =</span> UnalData<span class="sc">::</span>Matriculados,</span>
+<span id="cb3-11"><a href="#cb3-11"></a>        <span class="at">textNA =</span> <span class="st">"Sin información"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-12"><a href="#cb3-12"></a>   <span class="fu">Plot.Series</span>(<span class="at">categoria =</span> <span class="st">"TIPO_NIVEL"</span>, </span>
+<span id="cb3-13"><a href="#cb3-13"></a>              <span class="at">colores =</span> <span class="fu">c</span>(<span class="st">"#8cc63f"</span>, <span class="st">"#CC241D"</span>), </span>
+<span id="cb3-14"><a href="#cb3-14"></a>              <span class="at">titulo =</span> <span class="st">"Evolución histórica del número total de matriculados"</span>,</span>
+<span id="cb3-15"><a href="#cb3-15"></a>              <span class="at">labelY =</span> <span class="st">"Número de matriculados</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb3-16"><a href="#cb3-16"></a>              <span class="at">estatico =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-17"><a href="#cb3-17"></a>              <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="cn">NaN</span>),</span>
+<span id="cb3-18"><a href="#cb3-18"></a>              <span class="at">estilo       =</span> <span class="fu">list</span>(</span>
+<span id="cb3-19"><a href="#cb3-19"></a>              <span class="at">LegendTitle =</span> <span class="st">"Nivel"</span>, <span class="at">gg.Tema =</span> <span class="dv">5</span>,</span>
+<span id="cb3-20"><a href="#cb3-20"></a>               <span class="at">gg.Legend =</span> <span class="fu">list</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>, <span class="at">legend.direction =</span> <span class="st">"horizontal"</span>),</span>
+<span id="cb3-21"><a href="#cb3-21"></a>               <span class="at">gg.Repel  =</span> <span class="fu">list</span>(<span class="at">overlapping =</span> <span class="cn">TRUE</span>, <span class="at">size =</span> <span class="dv">3</span>)</span>
+<span id="cb3-22"><a href="#cb3-22"></a>              ) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img data-src="Presentacion_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-1-4">
+
+</div>
+<div id="tabset-1-5">
+
+</div>
+<div id="tabset-1-6">
+
+</div>
+<div id="tabset-1-7">
+
+</div>
+<div id="tabset-1-8">
+
+</div>
+</div>
+</div>
+</section>
+<section id="cultura-estadística-c" class="slide level2">
+<h2>Cultura Estadística (C)</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Imagenes/Cultura.png" height="580"></p>
+</figure>
+</div>
+</section>
+<section id="acciones-para-fomentar-la-cultura-estadística" class="slide level2 smaller">
+<h2>Acciones para fomentar la cultura estadística</h2>
+<ul>
+<li>Socialización al interior de las entidades Implementación de campañas en redes sociales</li>
+<li>Construcción y disposición de videos</li>
+<li>Disposición de Souvenirs</li>
+<li>Participación en eventos nacionales e internacionales</li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<div class="footer footer-default">
+<section id="información-de-contacto" class="slide level2 smaller">
+<h2>Información de Contacto</h2>
+<p><br></p>
+<p><a href="https://estadisticas.unal.edu.co/home/">Oficina Nacional de Estadística - UNAL</a></p>
+<p><a href="https://planeacion.unal.edu.co/home/">Dirección Nacional de Planeación y Estadística</a></p>
+<p>Mail: estadistica_nal@unal.edu.co</p>
+<p>Telefóno: (+57 1) 316 5000 ext: 18519</p>
+<p>Ubicación: Carrera 45 # 26-58, oficina 506</p>
+<p>Edif. Uriel Gutiérrez</p>
+<p>Bogotá D.C., Colombia</p>
+
+<img src="Imagenes/logoUNAL.jpg" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section>

@@ -1,6 +1,6 @@
 ---
 title: "Sistema de Estadísticas Oficiales de la UNAL"
-author: "<br>Alberto Rodríguez Rodríguez<br>albrodriguezr@unal.edu.co<br><br>Dirección Nacional de Planeación y Estadística<br>Universidad Nacional de Colombia"
+author: "<br>Alberto Rodríguez Rodríguez<br>albrodriguezr@unal.edu.co<br>[https://albertor.netlify.app/](https://albertor.netlify.app/)<br><br>Dirección Nacional de Planeación y Estadística<br>Universidad Nacional de Colombia"
 format: 
   revealjs:
     code-fold: true
@@ -20,7 +20,7 @@ editor: visual
 
 <br>
 
-El sistema de Estadísticas Oficiales de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas oficiales, así como al uso y extracción del valor contenido en los datos institucionales.
+El Sistema de Estadísticas Oficiales de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas oficiales, así como al uso y extracción del valor contenido en los datos institucionales.
 
 ## Modelo Gestión Estadística P2C-T
 
@@ -166,7 +166,7 @@ Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,
         datos = UnalData::Matriculados,
         textNA = "Sin información") %>% 
    Plot.Series(categoria = "TIPO_NIVEL", 
-              #colores = c("#8cc63f"), # verde, Total 
+              colores = c("#8cc63f", "#CC241D"), 
               titulo = "Evolución histórica del número total de matriculados", 
               labelY = "Número de matriculados",
               ylim = c(0,NaN),
@@ -194,7 +194,7 @@ Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,
         datos = UnalData::Matriculados,
         textNA = "Sin información") %>% 
    Plot.Series(categoria = "TIPO_NIVEL", 
-              #colores = c("#8cc63f"), # verde, Total 
+              colores = c("#8cc63f", "#CC241D"), 
               titulo = "Evolución histórica del número total de matriculados", 
               labelY = "Número de matriculados",
               ylim = c(0,NaN),
@@ -235,13 +235,158 @@ Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,
 
 ### Mapa 1
 
+```{r}
+#| echo: false
+Saber_Unal <- UnalData::SaberPro %>% 
+  select(Año = YEAR, Sexo = SEXO, 
+         COD_DEP_PROC,
+         COD_CIU_PROC,
+         Estrato = ESTRATO_ORIG, 
+         Sede = SEDE_NOMBRE_ADM, 
+         Admision = TIPO_ADM,
+         starts_with("PUNT")) %>% 
+  rename(Global = PUNTAJE_GLOBAL,
+         Ciudadanas = PUNT_COMP_CIUD,
+         Escrita = PUNT_COMU_ESCR,
+         Ingles = PUNT_INGLES,
+         Lectura = PUNT_LECT_CRIT,
+         Cuantitativo = PUNT_RAZO_CUANT) %>% 
+  na.omit() %>% 
+  filter(Global != 0, Ciudadanas != 0, Escrita != 0,
+         Ingles != 0, Lectura != 0, Cuantitativo != 0)
+```
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+
+Plot.Mapa(
+  datos = Saber_Unal,
+  depto = COD_DEP_PROC,
+  mpio = COD_CIU_PROC,
+  variable = Cuantitativo,
+  estadistico = c("Promedio"),
+  agregado = TRUE,
+  tipo     = "Mpios",
+  titulo = "Promedio <br>Cuantitativo",
+  naTo0    = FALSE,
+  cortes        = c(0, 160, 170, 180, Inf),  
+  colores       = c("red", "#fc9272", "#31a354", "#10F235"),
+  estatico = FALSE)
+
+```
+
 ### Mapa 2
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+
+Plot.Mapa(
+  datos = Saber_Unal,
+  depto = COD_DEP_PROC,
+  mpio = COD_CIU_PROC,
+  variable = Escrita,
+  estadistico = c("Promedio"),
+  agregado = TRUE,
+  tipo     = "Mpios",
+  titulo = "Promedio <br> C. Escrita",
+  naTo0    = FALSE,
+  cortes        = c(0, 160, 170, 180, Inf),  
+  colores       = c("red", "#fc9272", "#31a354", "#10F235"),
+  estatico = FALSE)
+
+```
 
 ### Mapa 3
 
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+
+Plot.Mapa(
+  datos = Saber_Unal,
+  depto = COD_DEP_PROC,
+  mpio = COD_CIU_PROC,
+  variable = Escrita,
+  estadistico = c("Promedio"),
+  agregado = TRUE,
+  tipo     = "Mpios",
+  titulo   = "Resultados Prom. Comun. Escrita \nPrueba Saber Pro UNAL por Municipios",
+  naTo0    = FALSE,
+  cortes        = c(0, 160, 170, 180, Inf),  
+  colores       = c("red", "#fc9272", "#31a354", "#10F235"),
+  estatico = TRUE,
+  estilo   = list(
+    Style = "Intervalo",  Theme = 5, anchoBorde = 0.2,
+    labelX = "", 
+    labelY = "",
+    Legend = list(legend.position = "bottom", legend.direction = "horizontal"),
+    Labs  = list(fill = "Puntaje Comunicación Escrita Prueba SaberPro", subtitle = "Periodo 2016-2021"),
+    Text  = list(color = "gray", size = 0)
+  ))
+
+```
+
 ### Tabla 1
 
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+library(DT)
+
+Tabla(datos = iris,
+      estatico = FALSE,
+      scrollX = FALSE)
+```
+
+
 ### Tabla 2
+
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Ver código"
+
+# Librerías requeridas
+
+library(tidyverse)
+library(UnalData)
+library(UnalR)
+library(gt)
+
+Tabla(datos = iris,
+      estatico = TRUE)
+```
 
 :::
 
@@ -252,13 +397,14 @@ Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,
 ## Acciones para fomentar la cultura estadística {.smaller}
 
 - Socialización al interior de las entidades
-Implementación de campañas en redes sociales
+- Implementación de campañas en redes sociales
 - Construcción y disposición de videos
 - Disposición de Souvenirs
 - Participación en eventos nacionales e internacionales
 
 ## Información de Contacto{.smaller}
 
+<br>
 <br>
 
 [Oficina Nacional de Estadística - UNAL](https://estadisticas.unal.edu.co/home/)

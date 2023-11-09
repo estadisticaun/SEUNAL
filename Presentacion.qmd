@@ -5,9 +5,9 @@ format:
   revealjs:
     code-fold: true
     logo: "Imagenes/logoUNAL.jpg"
-    #footer: "[Estadísticas UNAL](https://estadisticas.unal.edu.co/home/)"
     theme: serif
-    css: Styles.css
+    chalkboard: true
+    slide-number: true
 editor: visual
 ---
 ## QR de la presentación
@@ -16,21 +16,21 @@ editor: visual
 
 ![](Imagenes/QRPresentacion.png){fig-align="center" height=480}
 
-## ¿Qué es el Sistema de Estadísticas Oficiales de la UNAL?
+## ¿Qué es el Sistema de Estadísticas Oficiales de la UNAL?{.center}
 
 <br>
 
 El Sistema de Estadísticas Oficiales de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas oficiales, así como al uso y extracción del valor contenido en los datos institucionales.
 
-## Modelo Gestión Estadística P2C-T
+## Modelo Gestión Estadística P2C-T{.center}
 
 ![](Imagenes/Modelo.png){fig-align="center"}
 
-## Planeación Estadística (P)
+## Planeación Estadística (P){.center}
 
 ![](Imagenes/Planeacion.png){fig-align="center"}
 
-## Plan Estadístico Institucional{.smaller}
+## Plan Estadístico Institucional{.smaller .center}
 <br>
 
 :::: {.columns}
@@ -54,7 +54,7 @@ El Sistema de Estadísticas Oficiales de la UNAL está conformado por los instru
 :::
 ::::
 
-## Conceptualización (C)
+## Conceptualización (C) {.center}
 
 ![](Imagenes/Conceptualizacion.png){fig-align="center"}
 
@@ -78,7 +78,7 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 ::::
 
 
-## Producción Estadística (P)
+## Producción Estadística (P) {.center}
 
 ![](Imagenes/Produccion.png){fig-align="center"}
 
@@ -110,7 +110,7 @@ Aspirantes, admitidos, matriculados, graduados, docentes, personal administrativ
 ::::
 
 
-## Herramientas Tecnológicas (T)
+## Herramientas Tecnológicas (T){.center}
 
 ![](Imagenes/Tecnologia.png){fig-align="center"}
 
@@ -390,7 +390,7 @@ Tabla(datos = iris,
 
 :::
 
-## Cultura Estadística (C)
+## Cultura Estadística (C){.center}
 
 ![](Imagenes/Cultura.png){fig-align="center" height=580}
 
@@ -402,7 +402,7 @@ Tabla(datos = iris,
 - Disposición de Souvenirs
 - Participación en eventos nacionales e internacionales
 
-## Información de Contacto{.smaller}
+## Información de Contacto{.smaller .center}
 
 <br>
 <br>

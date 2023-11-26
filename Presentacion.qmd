@@ -380,11 +380,10 @@ Tabla(datos = iris,
 # Librerías requeridas
 
 library(tidyverse)
-library(UnalData)
 library(UnalR)
 library(gt)
 
-Tabla(datos = iris,
+Tabla(datos = head(iris),
       estatico = TRUE)
 ```
 

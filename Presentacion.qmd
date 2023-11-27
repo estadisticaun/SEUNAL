@@ -363,7 +363,7 @@ library(UnalData)
 library(UnalR)
 library(DT)
 
-Tabla(datos = head(iris),
+Tabla(datos = head(iris, 4),
       estatico = FALSE,
       scrollX = FALSE)
 ```

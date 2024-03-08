@@ -8,51 +8,69 @@ format:
     theme: serif
     chalkboard: true
     slide-number: true
+    preview-links: auto
 editor: visual
 ---
+
 ## QR de la presentación
 
 <br>
 
-![](Imagenes/QRPresentacion.png){fig-align="center" height=480}
+![](Imagenes/QRPresentacion.png){fig-align="center" height="480"}
 
-## ¿Qué es el Sistema de Estadísticas Oficiales de la UNAL?{.center}
+## ¿Qué es el Sistema de Estadísticas Oficiales de la UNAL? {.center}
 
 <br>
 
 El Sistema de Estadísticas Oficiales de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas oficiales, así como al uso y extracción del valor contenido en los datos institucionales.
 
-## Modelo Gestión Estadística P2C-T{.center}
+## Modelo Gestión Estadística P2C-T {.center}
 
 ![](Imagenes/Modelo.png){fig-align="center"}
 
-## Planeación Estadística (P){.center}
+## Planeación Estadística (P) {.center}
 
 ![](Imagenes/Planeacion.png){fig-align="center"}
 
-## Plan Estadístico Institucional{.smaller .center}
+## Plan Estadístico Institucional {.smaller .center}
+
 <br>
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
-
-[![](Imagenes/PlanE.jpg)](https://estadisticaun.github.io/PlanE/)
+[![](Imagenes/PlanE.jpg)](https://estadisticaun.github.io/PlanE/){target="_blank"}
 :::
 
 ::: {.column width="60%"}
-<h6 style="color:red;"> Líneas Estratégicas del Plan</h6>
-- Líneamientos conceptuales
-- Producción estadística
-- Herramientas tecnológicas
-- Cultura estadística
+
+<h6 style="color:red;">
+Líneas Estratégicas del Plan
+</h6>
+
+-   Líneamientos conceptuales
+-   Producción estadística
+-   Herramientas tecnológicas
+-   Cultura estadística
 
 <br>
 
-<h6 style="color:red;">Duración del Plan</h6>
+<h6 style="color:red;">
+Duración del Plan
+</h6>
+
 <em>Se desarrollará en 3 planes rectorales (9 años). <u>A la fecha, se ha avanzado en un 60 %.</u></em>
+
+<br>
+
+<h6 style="color:red;">
+Enlace Web
+</h6>
+
+[https://estadisticaun.github.io/PlanE/](https://estadisticaun.github.io/PlanE/){target="_blank"}
+<br>
+
 :::
-::::
+:::
 
 ## Conceptualización (C) {.center}
 
@@ -60,23 +78,18 @@ El Sistema de Estadísticas Oficiales de la UNAL está conformado por los instru
 
 ## Documentos Conceptuales {.smaller}
 
-Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y disposición de estadísticas e indicadores en el contexto público.
+Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y disposición de estadísticas e indicadores en el contexto público, principalmente.
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
+[![](Imagenes/GesInforma.jpg){height="470"}](https://estadisticaun.github.io/L_Conceptual/){target="_blank"}
 
-[![](Imagenes/GesInforma.jpg){height=500}](https://estadisticaun.github.io/L_Conceptual/)
 :::
 
 ::: {.column width="50%"}
-
-[![](Imagenes/EstadisticasInd.jpg){height=500}](https://estadisticaun.github.io/L_Conceptual1/)
-
+[![](Imagenes/EstadisticasInd.jpg){height=470}](https://estadisticaun.github.io/L_Conceptual1/){target="_blank"}
 :::
-
-::::
-
+:::
 
 ## Producción Estadística (P) {.center}
 
@@ -84,339 +97,441 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 
 ## Página de Estadísticas de la UNAL {.smaller}
 
-:::: {.columns}
+<br>
 
+::: columns
 ::: {.column width="70%"}
-
-[![](Imagenes/PaginaEsts.jpg){height=350}](https://estadisticas.unal.edu.co/home/)
-
-<h6 style="color:red;"> Estadísticas Oficiales Disponibles</h6>
-
-Aspirantes, admitidos, matriculados, graduados, docentes, personal administrativo, así como enlaces a información oficial de investigación, extensión e innovación e información financiera.
+[![](Imagenes/PaginaEsts.jpg){height="400"}](https://estadisticas.unal.edu.co/home/)
 
 :::
 
 ::: {.column width="30%"}
 
-<br>
+<h7 style="color:red;">
+Mecanismos de difusión
+</h7>
 
-<h6 style="color:red;">Mecanismos de difusión</h6>
-
-- Dashboards.
-- Boletines web estadísticos.
-
+-   Dashboards.
+-   Boletines estadísticos.
+-   Acceso a datos abiertos.
+:::
 :::
 
-::::
+## Mecanismos de Difusión {.smaller}
+
+<h3 style="color:red;">Dashboards</h3>
+
+::: columns
+::: {.column width="65%"}
+[![](Imagenes/PaginaEsts.jpg){height="300"}](https://estadisticas.unal.edu.co/home/){target="_blank"}
 
 
-## Herramientas Tecnológicas (T){.center}
+<h6 style="color:red;">Dashboards disponibles</h6>
+
+[Aspirantes](https://estadisticas.unal.edu.co/Aspiranres/){target="_blank"}, [admitidos](https://estadisticas.unal.edu.co/Admitidos/){target="_blank"}, [matriculados](https://estadisticas.unal.edu.co/Matriculados/){target="_blank"},
+[matriculados primera vez](https://estadisticas.unal.edu.co/MatriculadosPV/){target="_blank"}, 
+[graduados](https://estadisticas.unal.edu.co/Graduados/){target="_blank"}, [docentes](https://estadisticas.unal.edu.co/Docentes/){target="_blank"} y [personal administrativo](https://estadisticas.unal.edu.co/Administrativos/){target="_blank"}.
+:::
+
+::: {.column width="35%"}
+
+<h6 style="color:red;">Nivel de desagregación</h6>
+
+-   Información disponible a nivel nacional, sedes, facultades y programas académicos (desgregaciones geográficas institucionales).
+
+- Información disponible, por nivel de análisis, desde múltiples perspectivas: desagregaciones temporales, temáticas y geográficas territoriales.
+
+:::
+:::
+
+## Mecanismos de Difusión {.smaller}
+
+<h3 style="color:red;">Boletines Web Estadísticos - Presente</h3>
+
+::: columns
+::: {.column width="65%"}
+[![](Imagenes/Boletines.png){height="450"}](https://estadisticas.unal.edu.co/home/){target="_blank"}
+:::
+
+::: {.column width="35%"}
+
+<h4 style="color:red;">Boletines Disponibles</h4>
+
+Construcción y/o actualización de 7 boletínes estadísticos.
+
+- [Revista de Estadísticas e Indicadores de la UNAL](https://estadisticaun.github.io/BoletinNacional/){target="_blank"}
+- [Boletín Sede Palmira](https://estadisticaun.github.io/BoletinPalmira/){target="_blank"}
+- [Boletín Sede La Paz](https://estadisticaun.github.io/BoletinLaPaz/){target="_blank"}
+- [Boletín Sede Caribe](https://estadisticaun.github.io/BoletinCaribe/){target="_blank"}
+- [Boletín Sede Amazonía](https://estadisticaun.github.io/BoletinAmazonia/){target="_blank"}
+- [Boletín Sede Orinoquía](https://estadisticaun.github.io/BoletinOrinoquia/){target="_blank"}
+- [Boletín Sede Tumaco](https://estadisticaun.github.io/BoletinTumaco/){target="_blank"}
+
+:::
+:::
+
+## Datos Abiertos de la UNAL 
+
+::: columns
+::: {.column width="50%"}
+
+<br> 
+
+[![](Imagenes/DatosA.png){height="350"}](https://datos.gov.co/){target="_blank" preview-link="false"}
+:::
+
+::: {.column width="50%"}
+
+<h5 style="color:red;">Conjuntos Publicados</h5>
+
+La UNAL cuenta con los siguientes conjuntos de datos publicados.
+
+- [Aspirantes y Admitidos](https://www.datos.gov.co/Educaci-n/Microdatos-Aspirantes-y-Admitidos-en-la-UNAL/mqpd-2jhs/about_data){preview-link="false" target="_blank"}
+- [Matriculados](https://www.datos.gov.co/Educaci-n/Estudiantes-matriculados-UNAL/5pqr-ifsd/about_data){preview-link="false" target="_blank"}
+- [Graduados](https://www.datos.gov.co/Educaci-n/Estudiantes-Graduados-UNAL/3j5e-x7c4/about_data){preview-link="false" target="_blank"}
+- [Docentes de Carrera](https://www.datos.gov.co/Educaci-n/Microdatos-Docentes-de-Carrera-UNAL/uvhe-aufw/about_data){preview-link="false" target="_blank"}
+- [Personal Administrativo](https://www.datos.gov.co/Educaci-n/Microdatos-Personal-Administrativo-UNAL/6rvy-hipa/about_data){preview-link="false" target="_blank"}
+:::
+:::
+
+## Herramientas Tecnológicas (T) {.center}
 
 ![](Imagenes/Tecnologia.png){fig-align="center"}
 
-## El software R, protagonista en la gestión estadística en la UNAL
+## Arquitectura Tecnológica Ideal {.center}
 
-![](Imagenes/Rprotagonista.png){fig-align="center"}
+
+![](Imagenes/Gráfica 10.png){fig-align="center" height="580"}
+
+
+## Arquitectura Tecnológica Actual {.center}
+
+
+![](Imagenes/Gráfica 12.png){fig-align="center" height="580"}
+
+
+## Paquetes de R
+
+### El Paquetes de R UnalData
+
+<br>
+
+::: columns
+::: {.column width="30%"}
+[![](Imagenes/UnalData.png){fig-align="left" height="180"}](https://github.com/estadisticaun/UnalData){preview-link="false" target="_blank"}
+
+<h6 style="color:rgb(255, 86, 44);">N = 3.605.510</h6>
+:::
+
+::: {.column width="70%"}
+
+El paquete de datos  [UnalData](https://github.com/estadisticaun/UnalData){preview-link="false" target="_blank"} almacena, en un entorno privado, desde el año 2008, el total de microdatos que sirven de fuente para la consolidación de las estadísticas oficiales y la publicación de microdatos en el portal de datos abiertos del Estado.
+
+:::
+:::
 
 ## El Paquete de R UnalR
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="40%"}
+[![](Imagenes/UnalR.png)](https://estadisticaun.github.io/UnalR/index.html){fig-align="left" height="200" target="_blank"}
 
-[![](Imagenes/UnalR.png){fig-align="left" height=300}](https://estadisticaun.github.io/UnalR/index.html)
-
-El paquete [UnalR](https://estadisticaun.github.io/UnalR/index.html) proporciona métodos y herramientas para la visualización de estadísticas.
-
-
+El paquete [UnalR](https://estadisticaun.github.io/UnalR/index.html){target="_blank"} contiene funciones orientadas a la visualización de estadísticas.
 :::
 
 ::: {.column width="60%"}
 
-<br>
+<h6 style="color:red;">Contenido del Paquete</h6>
 
-<h6 style="color:red;">Aporte Central</h6>
-<br>
-Conjunto de funciones orientadas a la visualización **<u>estática e interactiva</u>** haciendo uso de funciones únicas derivadas de los paquetes highcharter, plotly, leaflet, DT, gt y ggplot2, principalmente.
+Conjunto de funciones orientadas a la visualización <u>estática e interactiva</u> haciendo uso de funciones únicas derivadas de los paquetes highcharter, plotly, leaflet, DT, gt y ggplot2, principalmente.
+<br><br>
 
+<h6 style="color:red;">Enlace Web</h6>
+
+[https://estadisticaun.github.io/UnalR/index.html](https://estadisticaun.github.io/UnalR/index.html){target="_blank"}
+:::
 :::
 
-::::
-
-## Ejemplos Uso Paquete Unal R {.smaller}
-
-::: {.panel-tabset}
-
-### Serie 1
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
-
-# Librerías requeridas
-
-library(tidyverse)
-library(UnalData)
-library(UnalR)
-
-Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, 
-        frecuencia = list(c(2009:2023), c(1:2)),
-        intervalo = list(c(2009, 1), c(2023, 1)),
-        datos = UnalData::Matriculados,
-        textNA = "Sin información") %>% 
-   Plot.Series(categoria = "TIPO_NIVEL", 
-              colores = c("#8cc63f", "#CC241D"), 
-              titulo = "Evolución histórica del número total de matriculados", 
-              labelY = "Número de matriculados",
-              ylim = c(0,NaN),
-              libreria = c("highcharter"), 
-              estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE")) 
-```
+## R en el Sistema Estadístico de la UNAL - Un Lenguaje Escalable{.center}
 
 
-### Serie 2
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
-
-# Librerías requeridas
-
-library(tidyverse)
-library(UnalData)
-library(UnalR)
-
-Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, 
-        frecuencia = list(c(2009:2023), c(1:2)),
-        intervalo = list(c(2009, 1), c(2023, 1)),
-        datos = UnalData::Matriculados,
-        textNA = "Sin información") %>% 
-   Plot.Series(categoria = "TIPO_NIVEL", 
-              colores = c("#8cc63f", "#CC241D"), 
-              titulo = "Evolución histórica del número total de matriculados", 
-              labelY = "Número de matriculados",
-              ylim = c(0,NaN),
-              libreria = c("plotly"), 
-              estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE")) 
-```
-
-### Serie 3
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
-
-# Librerías requeridas
-
-library(tidyverse)
-library(UnalData)
-library(UnalR)
-
-Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, 
-        frecuencia = list(c(2009:2023), c(1:2)),
-        intervalo = list(c(2009, 1), c(2023, 1)),
-        datos = UnalData::Matriculados,
-        textNA = "Sin información") %>% 
-   Plot.Series(categoria = "TIPO_NIVEL", 
-              colores = c("#8cc63f", "#CC241D"), 
-              titulo = "Evolución histórica del número total de matriculados",
-              labelY = "Número de matriculados\n",
-              estatico = TRUE,
-              ylim = c(0,NaN),
-              estilo       = list(
-              LegendTitle = "Nivel", gg.Tema = 5,
-               gg.Legend = list(legend.position = "bottom", legend.direction = "horizontal"),
-               gg.Repel  = list(overlapping = TRUE, size = 3)
-              ) )
-```
-
-### Mapa 1
-
-```{r}
-#| echo: false
-Saber_Unal <- UnalData::SaberPro %>% 
-  select(Año = YEAR, Sexo = SEXO, 
-         COD_DEP_PROC,
-         COD_CIU_PROC,
-         Estrato = ESTRATO_ORIG, 
-         Sede = SEDE_NOMBRE_ADM, 
-         Admision = TIPO_ADM,
-         starts_with("PUNT")) %>% 
-  rename(Global = PUNTAJE_GLOBAL,
-         Ciudadanas = PUNT_COMP_CIUD,
-         Escrita = PUNT_COMU_ESCR,
-         Ingles = PUNT_INGLES,
-         Lectura = PUNT_LECT_CRIT,
-         Cuantitativo = PUNT_RAZO_CUANT) %>% 
-  na.omit() %>% 
-  filter(Global != 0, Ciudadanas != 0, Escrita != 0,
-         Ingles != 0, Lectura != 0, Cuantitativo != 0)
-```
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
-
-# Librerías requeridas
-
-library(tidyverse)
-library(UnalData)
-library(UnalR)
-
-Plot.Mapa(
-  datos = Saber_Unal,
-  depto = COD_DEP_PROC,
-  mpio = COD_CIU_PROC,
-  variable = Cuantitativo,
-  estadistico = c("Promedio"),
-  agregado = TRUE,
-  tipo     = "Mpios",
-  titulo = "Promedio <br>Cuantitativo",
-  naTo0    = FALSE,
-  cortes        = c(0, 160, 170, 180, Inf),  
-  colores       = c("red", "#fc9272", "#31a354", "#10F235"),
-  estatico = FALSE)
-
-```
-
-### Mapa 2
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
-
-# Librerías requeridas
-
-library(tidyverse)
-library(UnalData)
-library(UnalR)
-
-Plot.Mapa(
-  datos = Saber_Unal,
-  depto = COD_DEP_PROC,
-  mpio = COD_CIU_PROC,
-  variable = Escrita,
-  estadistico = c("Promedio"),
-  agregado = TRUE,
-  tipo     = "Mpios",
-  titulo = "Promedio <br> C. Escrita",
-  naTo0    = FALSE,
-  cortes        = c(0, 160, 170, 180, Inf),  
-  colores       = c("red", "#fc9272", "#31a354", "#10F235"),
-  estatico = FALSE)
-
-```
-
-### Mapa 3
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
-
-# Librerías requeridas
-
-library(tidyverse)
-library(UnalData)
-library(UnalR)
-
-Plot.Mapa(
-  datos = Saber_Unal,
-  depto = COD_DEP_PROC,
-  mpio = COD_CIU_PROC,
-  variable = Escrita,
-  estadistico = c("Promedio"),
-  agregado = TRUE,
-  tipo     = "Mpios",
-  titulo   = "Resultados Prom. Comun. Escrita \nPrueba Saber Pro UNAL por Municipios",
-  naTo0    = FALSE,
-  cortes        = c(0, 160, 170, 180, Inf),  
-  colores       = c("red", "#fc9272", "#31a354", "#10F235"),
-  estatico = TRUE,
-  estilo   = list(
-    Style = "Intervalo",  Theme = 5, anchoBorde = 0.2,
-    labelX = "", 
-    labelY = "",
-    Legend = list(legend.position = "bottom", legend.direction = "horizontal"),
-    Labs  = list(fill = "Puntaje Comunicación Escrita Prueba SaberPro", subtitle = "Periodo 2016-2021"),
-    Text  = list(color = "gray", size = 0)
-  ))
-
-```
-
-### Tabla 1
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
-
-# Librerías requeridas
-
-library(tidyverse)
-library(UnalData)
-library(UnalR)
-library(DT)
-
-Tabla(datos = head(iris, 4),
-      estatico = FALSE,
-      scrollX = FALSE)
-```
+![](Imagenes/Rprotagonista.png){fig-align="center" height="520"}
 
 
-### Tabla 2
 
 
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Ver código"
 
-# Librerías requeridas
+<!-- ## Ejemplos Uso Paquete Unal R {.smaller} -->
 
-library(tidyverse)
-library(UnalR)
-library(gt)
+<!-- ::: panel-tabset -->
+<!-- ### Serie 1 -->
 
-Tabla(datos = head(iris),
-      estatico = TRUE)
-```
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
 
-:::
+<!-- # Librerías requeridas -->
 
-## Cultura Estadística (C){.center}
+<!-- library(tidyverse) -->
+<!-- library(UnalData) -->
+<!-- library(UnalR) -->
 
-![](Imagenes/Cultura.png){fig-align="center" height=580}
+<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
+<!--         frecuencia = list(c(2009:2023), c(1:2)), -->
+<!--         intervalo = list(c(2009, 1), c(2023, 1)), -->
+<!--         datos = UnalData::Matriculados, -->
+<!--         textNA = "Sin información") %>%  -->
+<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
+<!--               colores = c("#8cc63f", "#CC241D"),  -->
+<!--               titulo = "Evolución histórica del número total de matriculados",  -->
+<!--               labelY = "Número de matriculados", -->
+<!--               ylim = c(0,NaN), -->
+<!--               libreria = c("highcharter"),  -->
+<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE"))  -->
+<!-- ``` -->
+
+<!-- ### Serie 2 -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
+
+<!-- # Librerías requeridas -->
+
+<!-- library(tidyverse) -->
+<!-- library(UnalData) -->
+<!-- library(UnalR) -->
+
+<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
+<!--         frecuencia = list(c(2009:2023), c(1:2)), -->
+<!--         intervalo = list(c(2009, 1), c(2023, 1)), -->
+<!--         datos = UnalData::Matriculados, -->
+<!--         textNA = "Sin información") %>%  -->
+<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
+<!--               colores = c("#8cc63f", "#CC241D"),  -->
+<!--               titulo = "Evolución histórica del número total de matriculados",  -->
+<!--               labelY = "Número de matriculados", -->
+<!--               ylim = c(0,NaN), -->
+<!--               libreria = c("plotly"),  -->
+<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE"))  -->
+<!-- ``` -->
+
+<!-- ### Serie 3 -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
+
+<!-- # Librerías requeridas -->
+
+<!-- library(tidyverse) -->
+<!-- library(UnalData) -->
+<!-- library(UnalR) -->
+
+<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
+<!--         frecuencia = list(c(2009:2023), c(1:2)), -->
+<!--         intervalo = list(c(2009, 1), c(2023, 1)), -->
+<!--         datos = UnalData::Matriculados, -->
+<!--         textNA = "Sin información") %>%  -->
+<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
+<!--               colores = c("#8cc63f", "#CC241D"),  -->
+<!--               titulo = "Evolución histórica del número total de matriculados", -->
+<!--               labelY = "Número de matriculados\n", -->
+<!--               estatico = TRUE, -->
+<!--               ylim = c(0,NaN), -->
+<!--               estilo       = list( -->
+<!--               LegendTitle = "Nivel", gg.Tema = 5, -->
+<!--                gg.Legend = list(legend.position = "bottom", legend.direction = "horizontal"), -->
+<!--                gg.Repel  = list(overlapping = TRUE, size = 3) -->
+<!--               ) ) -->
+<!-- ``` -->
+
+<!-- ### Mapa 1 -->
+
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- Saber_Unal <- UnalData::SaberPro %>%  -->
+<!--   select(Año = YEAR, Sexo = SEXO,  -->
+<!--          COD_DEP_PROC, -->
+<!--          COD_CIU_PROC, -->
+<!--          Estrato = ESTRATO_ORIG,  -->
+<!--          Sede = SEDE_NOMBRE_ADM,  -->
+<!--          Admision = TIPO_ADM, -->
+<!--          starts_with("PUNT")) %>%  -->
+<!--   rename(Global = PUNTAJE_GLOBAL, -->
+<!--          Ciudadanas = PUNT_COMP_CIUD, -->
+<!--          Escrita = PUNT_COMU_ESCR, -->
+<!--          Ingles = PUNT_INGLES, -->
+<!--          Lectura = PUNT_LECT_CRIT, -->
+<!--          Cuantitativo = PUNT_RAZO_CUANT) %>%  -->
+<!--   na.omit() %>%  -->
+<!--   filter(Global != 0, Ciudadanas != 0, Escrita != 0, -->
+<!--          Ingles != 0, Lectura != 0, Cuantitativo != 0) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
+
+<!-- # Librerías requeridas -->
+
+<!-- library(tidyverse) -->
+<!-- library(UnalData) -->
+<!-- library(UnalR) -->
+
+<!-- Plot.Mapa( -->
+<!--   datos = Saber_Unal, -->
+<!--   depto = COD_DEP_PROC, -->
+<!--   mpio = COD_CIU_PROC, -->
+<!--   variable = Cuantitativo, -->
+<!--   estadistico = c("Promedio"), -->
+<!--   agregado = TRUE, -->
+<!--   tipo     = "Mpios", -->
+<!--   titulo = "Promedio <br>Cuantitativo", -->
+<!--   naTo0    = FALSE, -->
+<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
+<!--   estatico = FALSE) -->
+
+<!-- ``` -->
+
+<!-- ### Mapa 2 -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
+
+<!-- # Librerías requeridas -->
+
+<!-- library(tidyverse) -->
+<!-- library(UnalData) -->
+<!-- library(UnalR) -->
+
+<!-- Plot.Mapa( -->
+<!--   datos = Saber_Unal, -->
+<!--   depto = COD_DEP_PROC, -->
+<!--   mpio = COD_CIU_PROC, -->
+<!--   variable = Escrita, -->
+<!--   estadistico = c("Promedio"), -->
+<!--   agregado = TRUE, -->
+<!--   tipo     = "Mpios", -->
+<!--   titulo = "Promedio <br> C. Escrita", -->
+<!--   naTo0    = FALSE, -->
+<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
+<!--   estatico = FALSE) -->
+
+<!-- ``` -->
+
+<!-- ### Mapa 3 -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
+
+<!-- # Librerías requeridas -->
+
+<!-- library(tidyverse) -->
+<!-- library(UnalData) -->
+<!-- library(UnalR) -->
+
+<!-- Plot.Mapa( -->
+<!--   datos = Saber_Unal, -->
+<!--   depto = COD_DEP_PROC, -->
+<!--   mpio = COD_CIU_PROC, -->
+<!--   variable = Escrita, -->
+<!--   estadistico = c("Promedio"), -->
+<!--   agregado = TRUE, -->
+<!--   tipo     = "Mpios", -->
+<!--   titulo   = "Resultados Prom. Comun. Escrita \nPrueba Saber Pro UNAL por Municipios", -->
+<!--   naTo0    = FALSE, -->
+<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
+<!--   estatico = TRUE, -->
+<!--   estilo   = list( -->
+<!--     Style = "Intervalo",  Theme = 5, anchoBorde = 0.2, -->
+<!--     labelX = "",  -->
+<!--     labelY = "", -->
+<!--     Legend = list(legend.position = "bottom", legend.direction = "horizontal"), -->
+<!--     Labs  = list(fill = "Puntaje Comunicación Escrita Prueba SaberPro", subtitle = "Periodo 2016-2021"), -->
+<!--     Text  = list(color = "gray", size = 0) -->
+<!--   )) -->
+
+<!-- ``` -->
+
+<!-- ### Tabla 1 -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
+
+<!-- # Librerías requeridas -->
+
+<!-- library(tidyverse) -->
+<!-- library(UnalData) -->
+<!-- library(UnalR) -->
+<!-- library(DT) -->
+
+<!-- Tabla(datos = head(iris, 4), -->
+<!--       estatico = FALSE, -->
+<!--       scrollX = FALSE) -->
+<!-- ``` -->
+
+<!-- ### Tabla 2 -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| code-fold: true -->
+<!-- #| code-summary: "Ver código" -->
+
+<!-- # Librerías requeridas -->
+
+<!-- library(tidyverse) -->
+<!-- library(UnalR) -->
+<!-- library(gt) -->
+
+<!-- Tabla(datos = head(iris), -->
+<!--       estatico = TRUE) -->
+<!-- ``` -->
+<!-- ::: -->
+
+## Cultura Estadística (C) {.center}
+
+![](Imagenes/Cultura.png){fig-align="center" height="580"}
 
 ## Acciones para fomentar la cultura estadística {.smaller}
 
-- Socialización al interior de las entidades
-- Implementación de campañas en redes sociales
-- Construcción y disposición de videos
-- Disposición de Souvenirs
-- Participación en eventos nacionales e internacionales
+-  Socializar las cifras y los resultados derivados de datos disponibles al interior y al exterior de las entidades.
+-  Implementar campañas en redes sociales y otros mecanismos de divulgación.
+-  Fortalecer las capacidades académicas en gestión de datos del personal responsable.
+- Crear espacios académicos (cursos, guías, manuales, prácticas, etc.) para el fortalecimiento de la gestión estadística institucional interna y externa.
+- Fomentar e implementar innovaciones en la gestión estadística institucional.
+- Fomentar y crear espacios de colaboración entre entidades.
+- Crear y participar en redes internas, nacionales e internacionales de gestores de datos.
+- Participación en eventos académicos nacionales e internacionales.
 
-## Información de Contacto{.smaller .center}
 
-<br>
-<br>
+## Información de Contacto {.smaller .center}
+
+<br> <br>
 
 [Oficina Nacional de Estadística - UNAL](https://estadisticas.unal.edu.co/home/)
 
 [Dirección Nacional de Planeación y Estadística](https://planeacion.unal.edu.co/home/)
 
- Mail: estadistica_nal@unal.edu.co
+Mail: estadistica_nal\@unal.edu.co
 
-Telefóno:  (+57 1) 316 5000 ext: 18519
+Telefóno: (+57 1) 316 5000 ext: 18519
 
-Ubicación:  Carrera 45 # 26-58, oficina 506
+Ubicación: Carrera 45 \# 26-58, oficina 506
 
 Edif. Uriel Gutiérrez
 
 Bogotá D.C., Colombia
-

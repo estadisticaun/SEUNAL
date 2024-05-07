@@ -184,7 +184,7 @@ Construcción y/o actualización de 7 boletínes estadísticos.
 :::
 :::
 
-## Linea 2. <br>Gestión y publicación de datos abiertos. {.center}
+## Linea 2. <br>Gestión y publicación de datos abiertos de la UNAL. {.center}
 
 ## Datos Abiertos de la UNAL 
 
@@ -596,3 +596,15 @@ Ubicación: Carrera 45 \# 26-58, oficina 506
 Edif. Uriel Gutiérrez
 
 Bogotá D.C., Colombia
+
+## Opciones Navegación Presentación
+
+- Última diapositiva, dar clic en Shift + cursor derecho.
+- Primera diapositiva, dar clic en Shift + cursor izquierdo.
+- Activar y desactivar lienzo de notas, utilice la tecla C.
+- Activar y desactivar pizarra, utilice la tecla B.
+- Borrar notas, utilice la tecla DEL o Supr.
+- Colores hacia adelante del pincel, utilice la tecla X.
+- Colores hacia atrás del pincel, utilice la tecla Y.
+
+Más información en la sección de [Opciones de Navegación](https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-options){target="_blank"} del manual de Quarto.

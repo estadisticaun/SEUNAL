@@ -95,6 +95,20 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 
 ![](Imagenes/Produccion.png){fig-align="center"}
 
+## Líneas de Producción Estadística en la UNAL{.smaller}
+
+<br>
+
+<font size="8">1. Construcción y disposición de cifras oficiales.</font>
+
+<font size="8">2. Gestión y publicación de datos abiertos.</font>
+
+<font size="8">3. Gestión y disposición de datos para rankings.</font>
+
+<font size="8">4. Gestión de datos para el SNIES y otros.</font>
+
+## Linea 1. <br>Construcción y disposición de cifras oficiales de la UNAL. {.center}
+
 ## Página de Estadísticas de la UNAL {.smaller}
 
 <br>
@@ -170,6 +184,8 @@ Construcción y/o actualización de 7 boletínes estadísticos.
 :::
 :::
 
+## Linea 2. <br>Gestión y publicación de datos abiertos. {.center}
+
 ## Datos Abiertos de la UNAL 
 
 ::: columns
@@ -193,6 +209,18 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 - [Personal Administrativo](https://www.datos.gov.co/Educaci-n/Microdatos-Personal-Administrativo-UNAL/6rvy-hipa/about_data){preview-link="false" target="_blank"}
 :::
 :::
+
+## Linea 3. <br>Gestión y disposición de datos para rankings. {.center}
+
+---
+### Cadena de valor gestión y disposición de datos para rankings
+
+![](Imagenes/Rankings.png){fig-align="center"}
+
+<font size="6">[https://planeacion.unal.edu.co/menu-principal/rankings/](https://planeacion.unal.edu.co/menu-principal/rankings/){target="_blank"}</font>
+
+
+## Linea 4. <br>Gestión de datos para el SNIES y otros. {.center}
 
 ## Herramientas Tecnológicas (T) {.center}
 
@@ -516,6 +544,39 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 - Fomentar y crear espacios de colaboración entre entidades.
 - Crear y participar en redes internas, nacionales e internacionales de gestores de datos.
 - Participación en eventos académicos nacionales e internacionales.
+
+## Soportes Modelo P2C-T {.center}
+
+![](Imagenes/Modelo.png){fig-align="center"}
+
+
+## Soportes Modelo P2C-T {.center}
+
+<br>
+
+<h6 style="color:red;">Apoyo Institucional</h6>
+
+- [Artículo 13 Acuerdo 113 de 2013 del CSU](http://www.legal.unal.edu.co/rlunal/home/doc.jsp?d_i=58926){target="_blank" preview-link="false"}
+- [Artículo 3 Resolución 383 de 2014 de la Rectoría](http://www.legal.unal.edu.co/rlunal/home/doc.jsp?d_i=64488){target="_blank" preview-link="false"}
+- [Capítulo VI Acuerdo 238 del CSU](http://www.legal.unal.edu.co/rlunal/home/doc.jsp?d_i=88708){target="_blank" preview-link="false"}
+
+## Soportes Modelo P2C-T {.center}
+
+<br>
+
+<h6 style="color:red;">Recursos Económicos</h6>
+
+- Disposición de recursos fianncieros de inversión durante los últimos 2 Planes Globales de Desarrollo.
+
+## Soportes Modelo P2C-T {.center}
+
+<br>
+
+<h6 style="color:red;">Talento Humano</h6>
+
+- Disposición de talento humano.
+
+
 
 
 ## Información de Contacto {.smaller .center}

@@ -23,7 +23,7 @@ editor: visual
 
 <br>
 
-El Sistema de Estadísticas Oficiales de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas oficiales, así como al uso y extracción del valor contenido en los datos institucionales.
+El Sistema de Estadísticas de la UNAL está conformado por los instrumentos y las herramientas orientadas a la gestión y disposición de las cifras estadísticas, así como a la disposición, uso y extracción del valor contenido en los datos institucionales.
 
 ## Modelo Gestión Estadística P2C-T {.center}
 
@@ -62,7 +62,7 @@ Duración del Plan
 
 </h6>
 
-<em>Se desarrollará en 3 planes rectorales (9 años). <u>A la fecha, se ha avanzado en un 63 %.</u></em>
+<em>Se desarrollará en 3 planes rectorales (9 años). <u>A la fecha, se ha avanzado en un 60 %.</u></em>
 
 <br>
 

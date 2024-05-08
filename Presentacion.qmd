@@ -1,5 +1,5 @@
 ---
-title: "Sistema de Estadísticas Oficiales de la UNAL"
+title: "Sistema de Estadísticas de la UNAL"
 author: "<br>[Oficina Nacional de Estadística](https://estadisticas.unal.edu.co/home/)<br>estadistica_nal@unal.edu.co<br><br>[Dirección Nacional de Planeación y Estadística](https://planeacion.unal.edu.co/home/)<br>[Universidad Nacional de Colombia](https://unal.edu.co/)"
 format:
   onyxia-revealjs:
@@ -19,7 +19,7 @@ editor: visual
 
 ![](Imagenes/QRPresentacion.png){fig-align="center" height="480"}
 
-## ¿Qué es el Sistema de Estadísticas Oficiales de la UNAL? {.center}
+## ¿Qué es el Sistema de Estadísticas de la UNAL? {.center}
 
 <br>
 
@@ -110,7 +110,7 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 
 ## Linea 1. <br>Construcción y disposición de cifras oficiales de la UNAL. {.center}
 
-## Página de Estadísticas de la UNAL {.smaller}
+## Página de Estadísticas Oficiales de la UNAL {.smaller}
 
 <br>
 

@@ -1,14 +1,15 @@
 ---
 title: "Sistema de Estadísticas Oficiales de la UNAL"
-author: "<br>Alberto Rodríguez Rodríguez<br>albrodriguezr@unal.edu.co<br>[https://albertor.netlify.app/](https://albertor.netlify.app/)<br><br>Dirección Nacional de Planeación y Estadística<br>Universidad Nacional de Colombia"
-format: 
-  revealjs:
+author: "<br>[Oficina Nacional de Estadística](https://estadisticas.unal.edu.co/home/)<br>estadistica_nal@unal.edu.co<br><br>[Dirección Nacional de Planeación y Estadística](https://planeacion.unal.edu.co/home/)<br>[Universidad Nacional de Colombia](https://unal.edu.co/)"
+format:
+  onyxia-revealjs:
     code-fold: true
-    logo: "Imagenes/logoUNAL.jpg"
-    theme: serif
+    output-file: index.html
     chalkboard: true
+    #theme: serif
     slide-number: true
     preview-links: auto
+    logo: "Imagenes/logoUNAL.jpg"
 editor: visual
 ---
 
@@ -58,7 +59,7 @@ Líneas Estratégicas del Plan
 Duración del Plan
 </h6>
 
-<em>Se desarrollará en 3 planes rectorales (9 años). <u>A la fecha, se ha avanzado en un 60 %.</u></em>
+<em>Se desarrollará en 3 planes rectorales (9 años). <u>A la fecha, se ha avanzado en un 63 %.</u></em>
 
 <br>
 
@@ -133,14 +134,14 @@ Mecanismos de difusión
 
 ## Mecanismos de Difusión {.smaller}
 
-<h3 style="color:red;">Dashboards</h3>
+<h3>Dashboards</h3>
 
 ::: columns
 ::: {.column width="65%"}
 [![](Imagenes/PaginaEsts.jpg){height="300"}](https://estadisticas.unal.edu.co/home/){target="_blank"}
 
 
-<h6 style="color:red;">Dashboards disponibles</h6>
+<h6>Dashboards disponibles</h6>
 
 [Aspirantes](https://estadisticas.unal.edu.co/Aspiranres/){target="_blank"}, [admitidos](https://estadisticas.unal.edu.co/Admitidos/){target="_blank"}, [matriculados](https://estadisticas.unal.edu.co/Matriculados/){target="_blank"},
 [matriculados primera vez](https://estadisticas.unal.edu.co/MatriculadosPV/){target="_blank"}, 
@@ -160,7 +161,7 @@ Mecanismos de difusión
 
 ## Mecanismos de Difusión {.smaller}
 
-<h3 style="color:red;">Boletines Web Estadísticos - Presente</h3>
+<h3>Boletines Web Estadísticos - Presente</h3>
 
 ::: columns
 ::: {.column width="65%"}
@@ -274,7 +275,7 @@ El paquete [UnalR](https://estadisticaun.github.io/UnalR/index.html){target="_bl
 Conjunto de funciones orientadas a la visualización <u>estática e interactiva</u> haciendo uso de funciones únicas derivadas de los paquetes highcharter, plotly, leaflet, DT, gt y ggplot2, principalmente.
 <br><br>
 
-<h6 style="color:red;">Enlace Web</h6>
+<h6>Enlace Web</h6>
 
 [https://estadisticaun.github.io/UnalR/index.html](https://estadisticaun.github.io/UnalR/index.html){target="_blank"}
 :::
@@ -566,7 +567,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <h6 style="color:red;">Recursos Económicos</h6>
 
-- Disposición de recursos fianncieros de inversión durante los últimos 2 Planes Globales de Desarrollo.
+- Disposición de recursos financieros de inversión durante los últimos 2 Planes Globales de Desarrollo.
 
 ## Soportes Modelo P2C-T {.center}
 

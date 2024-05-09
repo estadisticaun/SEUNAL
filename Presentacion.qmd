@@ -759,7 +759,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <h6 style="color:red;">
 
-Apoyo Institucional
+Apoyo Institucional - Marco Normativo
 
 </h6>
 
@@ -777,7 +777,11 @@ Recursos Económicos
 
 </h6>
 
--   Disposición de recursos financieros de inversión durante los últimos 2 Planes Globales de Desarrollo.
+Disposición de recursos financieros de inversión durante los últimos 2 Planes Globales de Desarrollo.
+
+  - Proyecto 528: **Fortalecimiento de la Actividad Estadística Institucional**
+ 
+  - Proyecto 613-C2: [Fortalecimiento del Sistema Integrado de Estadísticas e Indicadores de la UNAL.](https://bpun2022.unal.edu.co/proyectos-componentes/613-C2/ver)
 
 ## Soportes Modelo P2C-T {.center}
 
@@ -789,7 +793,12 @@ Talento Humano
 
 </h6>
 
--   Disposición de talento humano.
+La gestión estadística en la UNAL, a la fecha, es apoyada a través de 3 estrategias institucionales de disposición del talento humano requerido.
+
+  - Funcionarios administrativos
+  - Contratistas
+  - Estudiantes auxiliares
+
 
 ## Información de Contacto {.smaller .center}
 

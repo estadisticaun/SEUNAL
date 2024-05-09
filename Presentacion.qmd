@@ -107,15 +107,15 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 
 <br>
 
-<font size="8">1. Construcción y disposición de cifras oficiales.</font>
+<font size="6">1. Construcción y disposición de cifras oficiales.</font>
 
-<font size="8">2. Gestión y publicación de datos abiertos.</font>
+<font size="6">2. Gestión y publicación de datos abiertos.</font>
 
-<font size="8">3. Gestión y disposición de datos para rankings.</font>
+<font size="6">3. Gestión y disposición de datos para rankings.</font>
 
-<font size="8">4. Gestión de datos para el SNIES y otros.</font>
+<font size="6">4. Gestión de datos para el Ministerio de Educación Nacional - MEN y otras entidades públicas.</font>
 
-<font size="8">5. Proceso Estadístico</font>
+<font size="6">5. Proceso Estadístico Institucional</font>
 
 ## Linea 1. <br>Construcción y disposición de cifras oficiales de la UNAL. {.center}
 
@@ -235,10 +235,29 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 <font size="6">[https://planeacion.unal.edu.co/menu-principal/rankings/](https://planeacion.unal.edu.co/menu-principal/rankings/){target="_blank"}</font>
 
-## Linea 4. <br>Gestión de datos para el SNIES y otros {.center}
+## Linea 4. <br>4. Gestión de datos para el Ministerio de Educación Nacional MEN y otras entidades públicas. {.center}
 
+---
 
-## Linea 5. <br>Proceso Estadístico {.center}
+### Reporte/Carga de datos al Ministerio de Educación Nacional - MEN
+
+![](Imagenes/SNIES1.png){fig-align="center"}
+
+---
+
+### Rol del Área Estadística en el reporte de datos al MEN
+
+![](Imagenes/SNIES2.png){fig-align="center"}
+
+---
+
+### Reporte/Carga de datos a otras entidades
+
+![](Imagenes/SNIES3.png){fig-align="center"}
+
+---
+
+## Linea 5. <br>Proceso Estadístico Institucional {.center}
 
 ---
 ### Sistema de Calidad Institucional (SIGA) + NTCPE 1000
@@ -285,7 +304,7 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 <h6 style="color:rgb(255, 86, 44);">
 
-<!-- N = `r format(nrow(UnalData::Aspirantes)+ nrow(UnalData::Matriculados)+nrow(UnalData::Graduados)+nrow(UnalData::SaberPro)+nrow(UnalData::Docentes)+nrow(UnalData::Administrativos)+nrow(UnalData::Hprogramas)+nrow(UnalData::Programas), big.mark=".")` -->
+N = `r format(nrow(UnalData::Aspirantes)+ nrow(UnalData::Matriculados)+nrow(UnalData::Graduados)+nrow(UnalData::SaberPro)+nrow(UnalData::Docentes)+nrow(UnalData::Administrativos)+nrow(UnalData::Hprogramas)+nrow(UnalData::Programas), big.mark=".")`
 
 </h6>
 :::

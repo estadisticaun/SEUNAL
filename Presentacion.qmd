@@ -13,6 +13,11 @@ format:
 editor: visual
 ---
 
+```{r}
+library(UnalData)
+```
+
+
 ## QR de la presentación
 
 <br>
@@ -109,6 +114,8 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 <font size="8">3. Gestión y disposición de datos para rankings.</font>
 
 <font size="8">4. Gestión de datos para el SNIES y otros.</font>
+
+<font size="8">5. Proceso Estadístico</font>
 
 ## Linea 1. <br>Construcción y disposición de cifras oficiales de la UNAL. {.center}
 
@@ -214,7 +221,13 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 ## Linea 3. <br>Gestión y disposición de datos para rankings. {.center}
 
-------------------------------------------------------------------------
+---
+
+### Los Rankings en el escenario de la UNAL
+
+![](Imagenes/RankingsC.png){fig-align="center"}
+
+---
 
 ### Cadena de valor gestión y disposición de datos para rankings
 
@@ -222,15 +235,39 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 <font size="6">[https://planeacion.unal.edu.co/menu-principal/rankings/](https://planeacion.unal.edu.co/menu-principal/rankings/){target="_blank"}</font>
 
-## Linea 4. <br>Gestión de datos para el SNIES y otros. {.center}
+## Linea 4. <br>Gestión de datos para el SNIES y otros {.center}
+
+
+## Linea 5. <br>Proceso Estadístico {.center}
+
+---
+### Sistema de Calidad Institucional (SIGA) + NTCPE 1000
+
+<br>
+
+#### [Sistema Integrado de Gestión Académica, Administrativa y Ambiental - SIGA]()
+* **Proceso Direccionamiento Institucional**
+  * 4 procedimientos e instructivos
+
+#### [Norma Técnica de Calidad del Proceso Estadístico-NTCPE 1000](https://www.dane.gov.co/files/sen/normatividad/NTC-Proceso-Estadistico-PE-1000-2020.pdf)
+
+* Armonizar proceso estadístico - SIGA y NTCPE 1000
+* Certificación de calidad en el Marco de la NTCPE 1000.
+
 
 ## Herramientas Tecnológicas (T) {.center}
 
 ![](Imagenes/Tecnologia.png){fig-align="center"}
 
+
 ## Arquitectura Tecnológica Ideal {.center}
 
 ![](Imagenes/Gráfica%2010.png){fig-align="center" height="580"}
+
+## Herramientas Tecnológicas Para la Gestión de Datos {.center}
+
+![](Imagenes/Gráfica 11.png){fig-align="center"}
+
 
 ## Arquitectura Tecnológica Actual {.center}
 
@@ -248,7 +285,7 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 <h6 style="color:rgb(255, 86, 44);">
 
-N = 3.605.510
+<!-- N = `r format(nrow(UnalData::Aspirantes)+ nrow(UnalData::Matriculados)+nrow(UnalData::Graduados)+nrow(UnalData::SaberPro)+nrow(UnalData::Docentes)+nrow(UnalData::Administrativos)+nrow(UnalData::Hprogramas)+nrow(UnalData::Programas), big.mark=".")` -->
 
 </h6>
 :::

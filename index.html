@@ -418,6 +418,7 @@
 <p><font size="8">2. Gestión y publicación de datos abiertos.</font></p>
 <p><font size="8">3. Gestión y disposición de datos para rankings.</font></p>
 <p><font size="8">4. Gestión de datos para el SNIES y otros.</font></p>
+<p><font size="8">5. Proceso Estadístico</font></p>
 </section>
 <section id="linea-1.-construcción-y-disposición-de-cifras-oficiales-de-la-unal." class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Linea 1. <br>Construcción y disposición de cifras oficiales de la UNAL.</h2>
@@ -515,12 +516,37 @@ Boletines Web Estadísticos - Presente
 </section>
 <section class="slide level2">
 
+<h3 data-background-image="background.svg" data-background-size="contain" id="los-rankings-en-el-escenario-de-la-unal">Los Rankings en el escenario de la UNAL</h3>
+
+<img data-src="Imagenes/RankingsC.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section class="slide level2">
+
 <h3 data-background-image="background.svg" data-background-size="contain" id="cadena-de-valor-gestión-y-disposición-de-datos-para-rankings">Cadena de valor gestión y disposición de datos para rankings</h3>
 
 <img data-src="Imagenes/Rankings.png" class="quarto-figure quarto-figure-center r-stretch"><p><font size="6"><a href="https://planeacion.unal.edu.co/menu-principal/rankings/" target="_blank">https://planeacion.unal.edu.co/menu-principal/rankings/</a></font></p>
 </section>
-<section id="linea-4.-gestión-de-datos-para-el-snies-y-otros." class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
-<h2>Linea 4. <br>Gestión de datos para el SNIES y otros.</h2>
+<section id="linea-4.-gestión-de-datos-para-el-snies-y-otros" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
+<h2>Linea 4. <br>Gestión de datos para el SNIES y otros</h2>
+</section>
+<section id="linea-5.-proceso-estadístico" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
+<h2>Linea 5. <br>Proceso Estadístico</h2>
+</section>
+<section class="slide level2">
+
+<h3 data-background-image="background.svg" data-background-size="contain" id="sistema-de-calidad-institucional-siga-ntcpe-1000">Sistema de Calidad Institucional (SIGA) + NTCPE 1000</h3>
+<p><br></p>
+<h4 data-background-image="background.svg" data-background-size="contain" id="sistema-integrado-de-gestión-académica-administrativa-y-ambiental---siga"><a href="">Sistema Integrado de Gestión Académica, Administrativa y Ambiental - SIGA</a></h4>
+<ul>
+<li><strong>Proceso Direccionamiento Institucional</strong>
+<ul>
+<li>4 procedimientos e instructivos</li>
+</ul></li>
+</ul>
+<h4 data-background-image="background.svg" data-background-size="contain" id="norma-técnica-de-calidad-del-proceso-estadístico-ntcpe-1000"><a href="https://www.dane.gov.co/files/sen/normatividad/NTC-Proceso-Estadistico-PE-1000-2020.pdf">Norma Técnica de Calidad del Proceso Estadístico-NTCPE 1000</a></h4>
+<ul>
+<li>Armonizar proceso estadístico - SIGA y NTCPE 1000</li>
+<li>Certificación de calidad en el Marco de la NTCPE 1000.</li>
+</ul>
 </section>
 <section id="herramientas-tecnológicas-t" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Herramientas Tecnológicas (T)</h2>
@@ -534,6 +560,10 @@ Boletines Web Estadísticos - Presente
 </figure>
 </div>
 </section>
+<section id="herramientas-tecnológicas-para-la-gestión-de-datos" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
+<h2>Herramientas Tecnológicas Para la Gestión de Datos</h2>
+
+<img data-src="Imagenes/Gráfica%2011.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="arquitectura-tecnológica-actual" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Arquitectura Tecnológica Actual</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -554,7 +584,7 @@ Boletines Web Estadísticos - Presente
 </figure>
 </div>
 <h6 style="color:rgb(255, 86, 44);">
-<p>N = 3.605.510</p>
+<!-- N = 3.661.173 -->
 </h6>
 </div><div class="column" style="width:70%;">
 <p>El paquete de datos <a href="https://github.com/estadisticaun/UnalData" data-preview-link="false" target="_blank">UnalData</a> almacena, en un entorno privado, desde el año 2008, el total de microdatos que sirven de fuente para la consolidación de las estadísticas oficiales y la publicación de microdatos en el portal de datos abiertos del Estado.</p>
@@ -1082,6 +1112,44 @@ Enlace Web
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

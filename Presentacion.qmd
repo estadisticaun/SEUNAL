@@ -147,7 +147,7 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 
 <h6>Dashboards disponibles</h6>
 
-[Aspirantes](https://estadisticas.unal.edu.co/Aspiranres/){target="_blank"}, [admitidos](https://estadisticas.unal.edu.co/Admitidos/){target="_blank"}, [matriculados](https://estadisticas.unal.edu.co/Matriculados/){target="_blank"}, [matriculados primera vez](https://estadisticas.unal.edu.co/MatriculadosPV/){target="_blank"}, [graduados](https://estadisticas.unal.edu.co/Graduados/){target="_blank"}, [docentes](https://estadisticas.unal.edu.co/Docentes/){target="_blank"} y [personal administrativo](https://estadisticas.unal.edu.co/Administrativos/){target="_blank"}.
+[Aspirantes](https://estadisticas.unal.edu.co/Aspiranres/){target="_blank"}, [Admitidos](https://estadisticas.unal.edu.co/Admitidos/){target="_blank"}, [Matriculados](https://estadisticas.unal.edu.co/Matriculados/){target="_blank"}, [Matriculados Primera Vez](https://estadisticas.unal.edu.co/MatriculadosPV/){target="_blank"}, [Graduados](https://estadisticas.unal.edu.co/Graduados/){target="_blank"}, [Saber Pro](https://estadisticas.unal.edu.co/SaberPro/){target="_blank"}, [Docentes](https://estadisticas.unal.edu.co/Docentes/){target="_blank"} y [Personal Administrativo](https://estadisticas.unal.edu.co/Administrativos/){target="_blank"}.
 :::
 
 ::: {.column width="35%"}
@@ -214,6 +214,7 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 -   [Aspirantes y Admitidos](https://www.datos.gov.co/Educaci-n/Microdatos-Aspirantes-y-Admitidos-en-la-UNAL/mqpd-2jhs/about_data){preview-link="false" target="_blank"}
 -   [Matriculados](https://www.datos.gov.co/Educaci-n/Estudiantes-matriculados-UNAL/5pqr-ifsd/about_data){preview-link="false" target="_blank"}
 -   [Graduados](https://www.datos.gov.co/Educaci-n/Estudiantes-Graduados-UNAL/3j5e-x7c4/about_data){preview-link="false" target="_blank"}
+-   [Saber Pro](https://www.datos.gov.co/Educaci-n/Microdatos-Resultados-Prueba-Saber-Pro-UNAL/g6ci-7e9g/about_data){preview-link="false" target="_blank"}
 -   [Docentes de Carrera](https://www.datos.gov.co/Educaci-n/Microdatos-Docentes-de-Carrera-UNAL/uvhe-aufw/about_data){preview-link="false" target="_blank"}
 -   [Personal Administrativo](https://www.datos.gov.co/Educaci-n/Microdatos-Personal-Administrativo-UNAL/6rvy-hipa/about_data){preview-link="false" target="_blank"}
 :::
@@ -317,24 +318,27 @@ El paquete de datos [UnalData](https://github.com/estadisticaun/UnalData){previe
 ## El Paquete de R UnalR
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="35%"}
 [![](Imagenes/UnalR.png)](https://estadisticaun.github.io/UnalR/index.html)
 
 El paquete [UnalR](https://estadisticaun.github.io/UnalR/index.html){target="_blank"} contiene funciones orientadas a la visualización de estadísticas.
 :::
 
-::: {.column width="60%"}
+::: {.column width="65%"}
 <h6 style="color:red;">
 
 Contenido del Paquete
 
 </h6>
 
-Conjunto de funciones orientadas a la visualización <u>estática e interactiva</u> haciendo uso de funciones únicas derivadas de los paquetes highcharter, plotly, leaflet, DT, gt y ggplot2, principalmente. <br><br>
+Conjunto de funciones orientadas a la visualización <u>estática e interactiva</u> haciendo uso de funciones de los paquetes highcharter, plotly, leaflet, DT, gt, ggplot2, etc. <br><br>
 
-<h6>Enlace Web</h6>
+<h6>Página Web Paquete UnalR</h6>
 
-[https://estadisticaun.github.io/UnalR/index.html](https://estadisticaun.github.io/UnalR/index.html){target="_blank"}
+[https://estadisticaun.github.io/UnalR/index.html](https://estadisticaun.github.io/UnalR/index.html){target="_blank"} <br>
+
+<h6>Repositorios códigos UnalR</h6>
+[CRAN](https://cran.r-project.org/web/packages/UnalR/index.html) y [GitHub](https://github.com/estadisticaun/UnalR)
 :::
 :::
 

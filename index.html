@@ -8,7 +8,7 @@
 <link href="Presentacion_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="Presentacion_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="Presentacion_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.549">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content=" Oficina Nacional de Estadística estadistica_nal@unal.edu.co Dirección Nacional de Planeación y Estadística Universidad Nacional de Colombia">
   <title>Sistema de Estadísticas de la UNAL</title>
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="Presentacion_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="_extensions/InseeFrLab/onyxia/logo.css">
@@ -323,6 +388,108 @@
       margin-right: 0; 
     }
   </style>
+  <link href="Presentacion_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+  <script src="Presentacion_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+  <script src="Presentacion_files/libs/jquery-3.5.1/jquery.min.js"></script>
+
+  <script src="Presentacion_files/libs/proj4js-2.3.15/proj4.js"></script>
+
+  <link href="Presentacion_files/libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/highcharts.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/highcharts-3d.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/highcharts-more.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/stock.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/map.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/data.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/exporting.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/drilldown.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/item-series.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/annotations.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/export-data.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/funnel.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/heatmap.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/treemap.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/sankey.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/organization.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/sunburst.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/vector.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/xrange.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/tilemap.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/venn.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/gantt.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/timeline.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/bullet.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/lollipop.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/series-label.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/plugins/motion.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/custom/reset.js"></script>
+
+  <script src="Presentacion_files/libs/highcharts-9.3.1/modules/boost.js"></script>
+
+  <script src="Presentacion_files/libs/highchart-binding-0.9.4/highchart.js"></script>
+
+  <script src="Presentacion_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+
+  <script src="Presentacion_files/libs/typedarray-0.1/typedarray.min.js"></script>
+
+  <link href="Presentacion_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+  <script src="Presentacion_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+  <link href="Presentacion_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+  <script src="Presentacion_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+  <script src="Presentacion_files/libs/plotly-locale-es-2.11.1/es.js"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 <body class="quarto-light">
@@ -389,8 +556,7 @@
 <p>Enlace Web</p>
 </h6>
 <p><a href="https://estadisticaun.github.io/PlanE/" target="_blank">https://estadisticaun.github.io/PlanE/</a> <br></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="conceptualización-c" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Conceptualización (C)</h2>
@@ -404,8 +570,7 @@
 <p><a href="https://estadisticaun.github.io/L_Conceptual/"><img data-src="Imagenes/GesInforma.jpg" height="470"></a></p>
 </div><div class="column" style="width:50%;">
 <p><a href="https://estadisticaun.github.io/L_Conceptual1/"><img data-src="Imagenes/EstadisticasInd.jpg" height="470"></a></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="producción-estadística-p" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Producción Estadística (P)</h2>
@@ -436,8 +601,7 @@
 <li>Boletines estadísticos.</li>
 <li>Acceso a datos abiertos.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="mecanismos-de-difusión" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Mecanismos de Difusión</h2>
@@ -459,8 +623,7 @@ Dashboards disponibles
 <li><p>Información disponible a nivel nacional, sedes, facultades y programas académicos (desgregaciones geográficas institucionales).</p></li>
 <li><p>Información disponible, por nivel de análisis, desde múltiples perspectivas: desagregaciones temporales, temáticas y geográficas territoriales.</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="mecanismos-de-difusión-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Mecanismos de Difusión</h2>
@@ -484,8 +647,7 @@ Boletines Web Estadísticos - Presente
 <li><a href="https://estadisticaun.github.io/BoletinOrinoquia/" target="_blank">Boletín Sede Orinoquía</a></li>
 <li><a href="https://estadisticaun.github.io/BoletinTumaco/" target="_blank">Boletín Sede Tumaco</a></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="linea-2.-gestión-y-publicación-de-datos-abiertos-de-la-unal." class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Linea 2. <br>Gestión y publicación de datos abiertos de la UNAL.</h2>
@@ -509,8 +671,7 @@ Boletines Web Estadísticos - Presente
 <li><a href="https://www.datos.gov.co/Educaci-n/Microdatos-Docentes-de-Carrera-UNAL/uvhe-aufw/about_data" data-preview-link="false" target="_blank">Docentes de Carrera</a></li>
 <li><a href="https://www.datos.gov.co/Educaci-n/Microdatos-Personal-Administrativo-UNAL/6rvy-hipa/about_data" data-preview-link="false" target="_blank">Personal Administrativo</a></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="linea-3.-gestión-y-disposición-de-datos-para-rankings." class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Linea 3. <br>Gestión y disposición de datos para rankings.</h2>
@@ -600,12 +761,11 @@ Boletines Web Estadísticos - Presente
 </figure>
 </div>
 <h6 style="color:rgb(255, 86, 44);">
-<p>N = 3.711.638</p>
+<p>N = 4.019.351</p>
 </h6>
 </div><div class="column" style="width:70%;">
 <p>El paquete de datos <a href="https://github.com/estadisticaun/UnalData" data-preview-link="false" target="_blank">UnalData</a> almacena, en un entorno privado, desde el año 2008, el total de microdatos que sirven de fuente para la consolidación de las estadísticas oficiales y la publicación de microdatos en el portal de datos abiertos del Estado.</p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="el-paquete-de-r-unalr" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>El Paquete de R UnalR</h2>
@@ -626,40 +786,78 @@ Página Web Paquete UnalR
 Repositorios códigos UnalR
 </h6>
 <p><a href="https://cran.r-project.org/web/packages/UnalR/index.html">CRAN</a> y <a href="https://github.com/estadisticaun/UnalR">GitHub</a></p>
-</div>
-</div>
+</div></div>
 </section>
-<section id="r-en-el-sistema-estadístico-de-la-unal---un-lenguaje-escalable" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
-<h2>R en el Sistema Estadístico de la UNAL - Un Lenguaje Escalable</h2>
-<div class="quarto-figure quarto-figure-center">
+<section id="ejemplo-uso-paquete-unal-r" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Ejemplo Uso Paquete Unal R</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Serie 1 - highcharter</a></li><li><a href="#tabset-1-2">Serie 2 - plotly</a></li><li><a href="#tabset-1-3">Serie 3 - ggplot2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(UnalR)</span>
+<span id="cb1-2"><a href=""></a></span>
+<span id="cb1-3"><a href=""></a><span class="fu">Plot.Series</span>(</span>
+<span id="cb1-4"><a href=""></a>  <span class="at">datos     =</span> ejConsolidadoGrad,</span>
+<span id="cb1-5"><a href=""></a>  <span class="at">categoria =</span> <span class="st">"SEXO"</span>,</span>
+<span id="cb1-6"><a href=""></a>  <span class="at">invertir  =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-7"><a href=""></a>  <span class="at">colores   =</span> <span class="fu">c</span>(<span class="st">"#8CC63F"</span>, <span class="st">"#0071BC"</span>),</span>
+<span id="cb1-8"><a href=""></a>  <span class="at">titulo    =</span> <span class="st">"Evolución del Número de Graduados por Sede"</span>,</span>
+<span id="cb1-9"><a href=""></a>  <span class="at">labelY    =</span> <span class="st">"N\u00famero de Graduados"</span>,</span>
+<span id="cb1-10"><a href=""></a>  <span class="at">libreria  =</span> <span class="st">"highcharter"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="highchart html-widget html-fill-item" id="htmlwidget-e18373a78824c9cc3889" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-e18373a78824c9cc3889">{"x":{"hc_opts":{"chart":{"reflow":true,"type":"datetime","zoomType":"x"},"title":{"text":"Evolución del Número de Graduados por Sede","style":{"fontWeight":"bold","fontSize":"22px","color":"#333333","useHTML":true}},"yAxis":{"title":{"text":"Número de Graduados","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"type":"linear","reversed":true,"lineColor":"#787878","opposite":false,"lineWidth":1,"labels":{"format":"{value}","style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"PlotSeries_Clase"},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"line":{"marker":{"enabled":false,"symbol":"square","radius":1}}},"series":[{"name":"Hombres","data":[{"Fecha":"2009-1","Clase":"Hombres","Y":2756,"Extra":55.6,"y":2756,"name":"2009-1"},{"Fecha":"2009-2","Clase":"Hombres","Y":1622,"Extra":52.2,"y":1622,"name":"2009-2"},{"Fecha":"2010-1","Clase":"Hombres","Y":2969,"Extra":56.3,"y":2969,"name":"2010-1"},{"Fecha":"2010-2","Clase":"Hombres","Y":1877,"Extra":55.8,"y":1877,"name":"2010-2"},{"Fecha":"2011-1","Clase":"Hombres","Y":2340,"Extra":53.8,"y":2340,"name":"2011-1"},{"Fecha":"2011-2","Clase":"Hombres","Y":1972,"Extra":59.5,"y":1972,"name":"2011-2"},{"Fecha":"2012-1","Clase":"Hombres","Y":1854,"Extra":56.6,"y":1854,"name":"2012-1"},{"Fecha":"2012-2","Clase":"Hombres","Y":2715,"Extra":55.9,"y":2715,"name":"2012-2"},{"Fecha":"2013-1","Clase":"Hombres","Y":1826,"Extra":57.4,"y":1826,"name":"2013-1"},{"Fecha":"2013-2","Clase":"Hombres","Y":2476,"Extra":56.3,"y":2476,"name":"2013-2"},{"Fecha":"2014-1","Clase":"Hombres","Y":2405,"Extra":57.5,"y":2405,"name":"2014-1"},{"Fecha":"2014-2","Clase":"Hombres","Y":2440,"Extra":56.1,"y":2440,"name":"2014-2"},{"Fecha":"2015-1","Clase":"Hombres","Y":2444,"Extra":57.3,"y":2444,"name":"2015-1"},{"Fecha":"2015-2","Clase":"Hombres","Y":2662,"Extra":57.5,"y":2662,"name":"2015-2"},{"Fecha":"2016-1","Clase":"Hombres","Y":2777,"Extra":59,"y":2777,"name":"2016-1"},{"Fecha":"2016-2","Clase":"Hombres","Y":2705,"Extra":57.5,"y":2705,"name":"2016-2"},{"Fecha":"2017-1","Clase":"Hombres","Y":3084,"Extra":58.4,"y":3084,"name":"2017-1"},{"Fecha":"2017-2","Clase":"Hombres","Y":2863,"Extra":59.7,"y":2863,"name":"2017-2"},{"Fecha":"2018-1","Clase":"Hombres","Y":2955,"Extra":57.7,"y":2955,"name":"2018-1"},{"Fecha":"2018-2","Clase":"Hombres","Y":2902,"Extra":56.9,"y":2902,"name":"2018-2"},{"Fecha":"2019-1","Clase":"Hombres","Y":1488,"Extra":55.3,"y":1488,"name":"2019-1"},{"Fecha":"2019-2","Clase":"Hombres","Y":4190,"Extra":59.9,"y":4190,"name":"2019-2"},{"Fecha":"2020-1","Clase":"Hombres","Y":2940,"Extra":59.7,"y":2940,"name":"2020-1"},{"Fecha":"2020-2","Clase":"Hombres","Y":2307,"Extra":60.5,"y":2307,"name":"2020-2"},{"Fecha":"2021-1","Clase":"Hombres","Y":2696,"Extra":61.3,"y":2696,"name":"2021-1"}],"type":"line","color":"#8CC63F","zoomType":{"enabled":false},"resetZoomButton":true},{"name":"Mujeres","data":[{"Fecha":"2009-1","Clase":"Mujeres","Y":2200,"Extra":44.4,"y":2200,"name":"2009-1"},{"Fecha":"2009-2","Clase":"Mujeres","Y":1486,"Extra":47.8,"y":1486,"name":"2009-2"},{"Fecha":"2010-1","Clase":"Mujeres","Y":2304,"Extra":43.7,"y":2304,"name":"2010-1"},{"Fecha":"2010-2","Clase":"Mujeres","Y":1485,"Extra":44.2,"y":1485,"name":"2010-2"},{"Fecha":"2011-1","Clase":"Mujeres","Y":2009,"Extra":46.2,"y":2009,"name":"2011-1"},{"Fecha":"2011-2","Clase":"Mujeres","Y":1345,"Extra":40.5,"y":1345,"name":"2011-2"},{"Fecha":"2012-1","Clase":"Mujeres","Y":1419,"Extra":43.4,"y":1419,"name":"2012-1"},{"Fecha":"2012-2","Clase":"Mujeres","Y":2146,"Extra":44.1,"y":2146,"name":"2012-2"},{"Fecha":"2013-1","Clase":"Mujeres","Y":1353,"Extra":42.6,"y":1353,"name":"2013-1"},{"Fecha":"2013-2","Clase":"Mujeres","Y":1923,"Extra":43.7,"y":1923,"name":"2013-2"},{"Fecha":"2014-1","Clase":"Mujeres","Y":1780,"Extra":42.5,"y":1780,"name":"2014-1"},{"Fecha":"2014-2","Clase":"Mujeres","Y":1912,"Extra":43.9,"y":1912,"name":"2014-2"},{"Fecha":"2015-1","Clase":"Mujeres","Y":1824,"Extra":42.7,"y":1824,"name":"2015-1"},{"Fecha":"2015-2","Clase":"Mujeres","Y":1969,"Extra":42.5,"y":1969,"name":"2015-2"},{"Fecha":"2016-1","Clase":"Mujeres","Y":1929,"Extra":41,"y":1929,"name":"2016-1"},{"Fecha":"2016-2","Clase":"Mujeres","Y":1997,"Extra":42.5,"y":1997,"name":"2016-2"},{"Fecha":"2017-1","Clase":"Mujeres","Y":2198,"Extra":41.6,"y":2198,"name":"2017-1"},{"Fecha":"2017-2","Clase":"Mujeres","Y":1936,"Extra":40.3,"y":1936,"name":"2017-2"},{"Fecha":"2018-1","Clase":"Mujeres","Y":2169,"Extra":42.3,"y":2169,"name":"2018-1"},{"Fecha":"2018-2","Clase":"Mujeres","Y":2200,"Extra":43.1,"y":2200,"name":"2018-2"},{"Fecha":"2019-1","Clase":"Mujeres","Y":1202,"Extra":44.7,"y":1202,"name":"2019-1"},{"Fecha":"2019-2","Clase":"Mujeres","Y":2806,"Extra":40.1,"y":2806,"name":"2019-2"},{"Fecha":"2020-1","Clase":"Mujeres","Y":1986,"Extra":40.3,"y":1986,"name":"2020-1"},{"Fecha":"2020-2","Clase":"Mujeres","Y":1506,"Extra":39.5,"y":1506,"name":"2020-2"},{"Fecha":"2021-1","Clase":"Mujeres","Y":1704,"Extra":38.7,"y":1704,"name":"2021-1"}],"type":"line","color":"#0071BC","zoomType":{"enabled":false},"resetZoomButton":true}],"xAxis":{"type":"category","title":{"text":"Periodo","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"categories":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1"],"align":"center","lineColor":"#787878","opposite":false,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"legend":{"enabled":true,"align":"center","verticalAlign":"bottom","layout":"horizontal","title":{"text":"","style":{"textDecoration":"underline"}},"x":42,"y":0,"itemStyle":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"tooltip":{"crosshairs":true,"shared":true,"pointFormat":"<span style=\"color:{series.color}\">● <\/span><b>{series.name}: {point.y}<\/b> ({point.Extra}%)<br/>","backgroundColor":"rgba(186,174,174,0.7)","borderColor":"#6D6666","borderWidth":5,"useHTML":true}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Menú Contextual del Gráfico","decimalPoint":".","downloadCSV":"Descargar CSV","downloadJPEG":"Descargar imagen JPEG","downloadPDF":"Descargar documento PDF","downloadPNG":"Descargar imagen PNG","downloadSVG":"Descargar imagen vectorial SVG","downloadXLS":"Descargar XLS","drillUpText":"<< Volver a {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Cargando...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No hay información para mostrar","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Imprimir gráfico","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"Ver tabla de datos","viewFullscreen":"Ver en pantalla completa","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="fu">Plot.Series</span>(</span>
+<span id="cb2-2"><a href=""></a>  <span class="at">datos     =</span> ejConsolidadoGrad,</span>
+<span id="cb2-3"><a href=""></a>  <span class="at">categoria =</span> <span class="st">"SEXO"</span>,</span>
+<span id="cb2-4"><a href=""></a>  <span class="at">invertir  =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb2-5"><a href=""></a>  <span class="at">colores   =</span> <span class="fu">c</span>(<span class="st">"#8CC63F"</span>, <span class="st">"#0071BC"</span>),</span>
+<span id="cb2-6"><a href=""></a>  <span class="at">titulo    =</span> <span class="st">"Evolución del Número de Graduados por Sede"</span>,</span>
+<span id="cb2-7"><a href=""></a>  <span class="at">labelY    =</span> <span class="st">"N\u00famero de Graduados"</span>,</span>
+<span id="cb2-8"><a href=""></a>  <span class="at">libreria  =</span> <span class="st">"plotly"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-20c07246f2e20f871c4b" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-20c07246f2e20f871c4b">{"x":{"visdat":{"4d343dd36c4f":["function () ","plotlyVisDat"]},"cur_data":"4d343dd36c4f","attrs":{"4d343dd36c4f":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1"],"y":[2756,1622,2969,1877,2340,1972,1854,2715,1826,2476,2405,2440,2444,2662,2777,2705,3084,2863,2955,2902,1488,4190,2940,2307,2696],"text":[55.600000000000001,52.200000000000003,56.299999999999997,55.799999999999997,53.799999999999997,59.5,56.600000000000001,55.899999999999999,57.399999999999999,56.299999999999997,57.5,56.100000000000001,57.299999999999997,57.5,59,57.5,58.399999999999999,59.700000000000003,57.700000000000003,56.899999999999999,55.299999999999997,59.899999999999999,59.700000000000003,60.5,61.299999999999997],"name":"Hombres","type":"scatter","mode":"markers+lines","line":{"color":"#8CC63F","width":3},"marker":{"color":"#8CC63F","size":6,"line":{"width":1.2,"color":"#787878"}},"hovertemplate":"%{y} (%{text:.2s}%)","textposition":"outside","inherit":true},"4d343dd36c4f.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1"],"y":[2200,1486,2304,1485,2009,1345,1419,2146,1353,1923,1780,1912,1824,1969,1929,1997,2198,1936,2169,2200,1202,2806,1986,1506,1704],"text":[44.399999999999999,47.799999999999997,43.700000000000003,44.200000000000003,46.200000000000003,40.5,43.399999999999999,44.100000000000001,42.600000000000001,43.700000000000003,42.5,43.899999999999999,42.700000000000003,42.5,41,42.5,41.600000000000001,40.299999999999997,42.299999999999997,43.100000000000001,44.700000000000003,40.100000000000001,40.299999999999997,39.5,38.700000000000003],"name":"Mujeres","type":"scatter","mode":"markers+lines","line":{"color":"#0071BC","width":3},"marker":{"color":"#0071BC","size":6,"line":{"width":1.2,"color":"#787878"}},"hovertemplate":"%{y} (%{text:.2s}%)","textposition":"outside","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":{"text":"<b>Evolución del Número de Graduados por Sede<\/b>","font":{"family":"Open Sans","size":24,"color":"#333333"},"y":0.95999999999999996},"xaxis":{"domain":[0,1],"automargin":true,"title":"Periodo","zeroline":false,"showline":true,"showgrid":false,"showticklabels":true,"linecolor":"#787878","linewidth":2.5,"autotick":false,"ticks":"outside","tickwidth":2.5,"ticklen":10,"tickcolor":"#CCCCCC","tickangle":-45,"tickfont":{"family":"Old Standard TT, serif","size":16,"color":"#525252"},"type":"category","categoryorder":"array","categoryarray":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Número de Graduados","ticksuffix":"","zeroline":true,"autorange":"reversed","range":[],"showline":true,"showgrid":true,"showticklabels":true,"linecolor":"#787878","linewidth":3,"tickfont":{"family":"Old Standard TT, serif","size":16,"color":"#525252"},"separatethousands":true},"autosize":true,"showlegend":true,"legend":{"x":1,"y":0.5,"orientation":"v","traceorder":"normal","title":{"text":"<b><\/b>"}},"hovermode":"x unified","annotations":[{"x":0.20000000000000001,"y":1,"text":"","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":12,"color":"#CCCCCC"}},{"x":0.20000000000000001,"y":1,"text":"","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":12,"color":"#CCCCCC"}}]},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"locale":"es"},"data":[{"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1"],"y":[2756,1622,2969,1877,2340,1972,1854,2715,1826,2476,2405,2440,2444,2662,2777,2705,3084,2863,2955,2902,1488,4190,2940,2307,2696],"text":[55.600000000000001,52.200000000000003,56.299999999999997,55.799999999999997,53.799999999999997,59.5,56.600000000000001,55.899999999999999,57.399999999999999,56.299999999999997,57.5,56.100000000000001,57.299999999999997,57.5,59,57.5,58.399999999999999,59.700000000000003,57.700000000000003,56.899999999999999,55.299999999999997,59.899999999999999,59.700000000000003,60.5,61.299999999999997],"name":"Hombres","type":"scatter","mode":"markers+lines","line":{"color":"#8CC63F","width":3},"marker":{"color":"#8CC63F","size":6,"line":{"color":"#787878","width":1.2}},"hovertemplate":["%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)"],"textposition":["outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside"],"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2009-1","2009-2","2010-1","2010-2","2011-1","2011-2","2012-1","2012-2","2013-1","2013-2","2014-1","2014-2","2015-1","2015-2","2016-1","2016-2","2017-1","2017-2","2018-1","2018-2","2019-1","2019-2","2020-1","2020-2","2021-1"],"y":[2200,1486,2304,1485,2009,1345,1419,2146,1353,1923,1780,1912,1824,1969,1929,1997,2198,1936,2169,2200,1202,2806,1986,1506,1704],"text":[44.399999999999999,47.799999999999997,43.700000000000003,44.200000000000003,46.200000000000003,40.5,43.399999999999999,44.100000000000001,42.600000000000001,43.700000000000003,42.5,43.899999999999999,42.700000000000003,42.5,41,42.5,41.600000000000001,40.299999999999997,42.299999999999997,43.100000000000001,44.700000000000003,40.100000000000001,40.299999999999997,39.5,38.700000000000003],"name":"Mujeres","type":"scatter","mode":"markers+lines","line":{"color":"#0071BC","width":3},"marker":{"color":"#0071BC","size":6,"line":{"color":"#787878","width":1.2}},"hovertemplate":["%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)","%{y} (%{text:.2s}%)"],"textposition":["outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside","outside"],"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-1-3">
+<div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">Plot.Series</span>(</span>
+<span id="cb3-2"><a href=""></a>  <span class="at">datos     =</span> ejConsolidadoGrad,</span>
+<span id="cb3-3"><a href=""></a>  <span class="at">categoria =</span> <span class="st">"SEXO"</span>,</span>
+<span id="cb3-4"><a href=""></a>  <span class="at">invertir  =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-5"><a href=""></a>  <span class="at">colores   =</span> <span class="fu">c</span>(<span class="st">"#8CC63F"</span>, <span class="st">"#0071BC"</span>),</span>
+<span id="cb3-6"><a href=""></a>  <span class="at">titulo    =</span> <span class="st">"Evolución del Número de Graduados por Sede"</span>,</span>
+<span id="cb3-7"><a href=""></a>  <span class="at">labelY    =</span> <span class="st">"N\u00famero de Graduados"</span>,</span>
+<span id="cb3-8"><a href=""></a>  <span class="at">libreria  =</span> <span class="st">"highcharter"</span>,</span>
+<span id="cb3-9"><a href=""></a>  <span class="at">estatico  =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
 <figure>
-<p><img data-src="Imagenes/Rprotagonista.png" class="quarto-figure quarto-figure-center" height="520"></p>
+<p><img data-src="Presentacion_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
 </figure>
 </div>
-<!-- ## Ejemplos Uso Paquete Unal R {.smaller} -->
-<!-- ::: panel-tabset -->
-<!-- ### Serie 1 -->
-<!-- ```{r} -->
-<!-- #| echo: true -->
-<!-- #| code-fold: true -->
-<!-- #| code-summary: "Ver código" -->
-<!-- # Librerías requeridas -->
-<!-- library(tidyverse) -->
-<!-- library(UnalData) -->
-<!-- library(UnalR) -->
-<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
-<!--         frecuencia = list(c(2009:2023), c(1:2)), -->
-<!--         intervalo = list(c(2009, 1), c(2023, 1)), -->
-<!--         datos = UnalData::Matriculados, -->
-<!--         textNA = "Sin información") %>%  -->
-<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
-<!--               colores = c("#8cc63f", "#CC241D"),  -->
-<!--               titulo = "Evolución histórica del número total de matriculados",  -->
-<!--               labelY = "Número de matriculados", -->
-<!--               ylim = c(0,NaN), -->
-<!--               libreria = c("highcharter"),  -->
-<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE"))  -->
-<!-- ``` -->
+</div>
+</div>
+</div>
+</div>
+</div>
 <!-- ### Serie 2 -->
 <!-- ```{r} -->
 <!-- #| echo: true -->
@@ -669,18 +867,18 @@ Repositorios códigos UnalR
 <!-- library(tidyverse) -->
 <!-- library(UnalData) -->
 <!-- library(UnalR) -->
-<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
+<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, -->
 <!--         frecuencia = list(c(2009:2023), c(1:2)), -->
 <!--         intervalo = list(c(2009, 1), c(2023, 1)), -->
 <!--         datos = UnalData::Matriculados, -->
-<!--         textNA = "Sin información") %>%  -->
-<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
-<!--               colores = c("#8cc63f", "#CC241D"),  -->
-<!--               titulo = "Evolución histórica del número total de matriculados",  -->
+<!--         textNA = "Sin información") %>% -->
+<!--    Plot.Series(categoria = "TIPO_NIVEL", -->
+<!--               colores = c("#8cc63f", "#CC241D"), -->
+<!--               titulo = "Evolución histórica del número total de matriculados", -->
 <!--               labelY = "Número de matriculados", -->
 <!--               ylim = c(0,NaN), -->
-<!--               libreria = c("plotly"),  -->
-<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE"))  -->
+<!--               libreria = c("plotly"), -->
+<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE")) -->
 <!-- ``` -->
 <!-- ### Serie 3 -->
 <!-- ```{r} -->
@@ -691,13 +889,13 @@ Repositorios códigos UnalR
 <!-- library(tidyverse) -->
 <!-- library(UnalData) -->
 <!-- library(UnalR) -->
-<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
+<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, -->
 <!--         frecuencia = list(c(2009:2023), c(1:2)), -->
 <!--         intervalo = list(c(2009, 1), c(2023, 1)), -->
 <!--         datos = UnalData::Matriculados, -->
-<!--         textNA = "Sin información") %>%  -->
-<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
-<!--               colores = c("#8cc63f", "#CC241D"),  -->
+<!--         textNA = "Sin información") %>% -->
+<!--    Plot.Series(categoria = "TIPO_NIVEL", -->
+<!--               colores = c("#8cc63f", "#CC241D"), -->
 <!--               titulo = "Evolución histórica del número total de matriculados", -->
 <!--               labelY = "Número de matriculados\n", -->
 <!--               estatico = TRUE, -->
@@ -711,21 +909,21 @@ Repositorios códigos UnalR
 <!-- ### Mapa 1 -->
 <!-- ```{r} -->
 <!-- #| echo: false -->
-<!-- Saber_Unal <- UnalData::SaberPro %>%  -->
-<!--   select(Año = YEAR, Sexo = SEXO,  -->
+<!-- Saber_Unal <- UnalData::SaberPro %>% -->
+<!--   select(Año = YEAR, Sexo = SEXO, -->
 <!--          COD_DEP_PROC, -->
 <!--          COD_CIU_PROC, -->
-<!--          Estrato = ESTRATO_ORIG,  -->
-<!--          Sede = SEDE_NOMBRE_ADM,  -->
+<!--          Estrato = ESTRATO_ORIG, -->
+<!--          Sede = SEDE_NOMBRE_ADM, -->
 <!--          Admision = TIPO_ADM, -->
-<!--          starts_with("PUNT")) %>%  -->
+<!--          starts_with("PUNT")) %>% -->
 <!--   rename(Global = PUNTAJE_GLOBAL, -->
 <!--          Ciudadanas = PUNT_COMP_CIUD, -->
 <!--          Escrita = PUNT_COMU_ESCR, -->
 <!--          Ingles = PUNT_INGLES, -->
 <!--          Lectura = PUNT_LECT_CRIT, -->
-<!--          Cuantitativo = PUNT_RAZO_CUANT) %>%  -->
-<!--   na.omit() %>%  -->
+<!--          Cuantitativo = PUNT_RAZO_CUANT) %>% -->
+<!--   na.omit() %>% -->
 <!--   filter(Global != 0, Ciudadanas != 0, Escrita != 0, -->
 <!--          Ingles != 0, Lectura != 0, Cuantitativo != 0) -->
 <!-- ``` -->
@@ -747,7 +945,7 @@ Repositorios códigos UnalR
 <!--   tipo     = "Mpios", -->
 <!--   titulo = "Promedio <br>Cuantitativo", -->
 <!--   naTo0    = FALSE, -->
-<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   cortes        = c(0, 160, 170, 180, Inf), -->
 <!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
 <!--   estatico = FALSE) -->
 <!-- ``` -->
@@ -770,7 +968,7 @@ Repositorios códigos UnalR
 <!--   tipo     = "Mpios", -->
 <!--   titulo = "Promedio <br> C. Escrita", -->
 <!--   naTo0    = FALSE, -->
-<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   cortes        = c(0, 160, 170, 180, Inf), -->
 <!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
 <!--   estatico = FALSE) -->
 <!-- ``` -->
@@ -793,12 +991,12 @@ Repositorios códigos UnalR
 <!--   tipo     = "Mpios", -->
 <!--   titulo   = "Resultados Prom. Comun. Escrita \nPrueba Saber Pro UNAL por Municipios", -->
 <!--   naTo0    = FALSE, -->
-<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   cortes        = c(0, 160, 170, 180, Inf), -->
 <!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
 <!--   estatico = TRUE, -->
 <!--   estilo   = list( -->
 <!--     Style = "Intervalo",  Theme = 5, anchoBorde = 0.2, -->
-<!--     labelX = "",  -->
+<!--     labelX = "", -->
 <!--     labelY = "", -->
 <!--     Legend = list(legend.position = "bottom", legend.direction = "horizontal"), -->
 <!--     Labs  = list(fill = "Puntaje Comunicación Escrita Prueba SaberPro", subtitle = "Periodo 2016-2021"), -->
@@ -832,6 +1030,14 @@ Repositorios códigos UnalR
 <!--       estatico = TRUE) -->
 <!-- ``` -->
 <!-- ::: -->
+</section>
+<section id="r-en-el-sistema-estadístico-de-la-unal---un-lenguaje-escalable" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
+<h2>R en el Sistema Estadístico de la UNAL - Un Lenguaje Escalable</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Imagenes/Rprotagonista.png" class="quarto-figure quarto-figure-center" height="520"></p>
+</figure>
+</div>
 </section>
 <section id="cultura-estadística-c" class="slide level2 center" data-background-image="background.svg" data-background-size="contain">
 <h2>Cultura Estadística (C)</h2>
@@ -1138,42 +1344,80 @@ Repositorios códigos UnalR
       });
     </script>
     
+
     <script>
+
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
       // slide changes (different for each slide format).
+
       (function () {
+
         // dispatch for htmlwidgets
+
         function fireSlideEnter() {
+
           const event = window.document.createEvent("Event");
+
           event.initEvent("slideenter", true, true);
+
           window.document.dispatchEvent(event);
+
         }
+
+    
 
         function fireSlideChanged(previousSlide, currentSlide) {
+
           fireSlideEnter();
 
+    
+
           // dispatch for shiny
+
           if (window.jQuery) {
+
             if (previousSlide) {
+
               window.jQuery(previousSlide).trigger("hidden");
+
             }
+
             if (currentSlide) {
+
               window.jQuery(currentSlide).trigger("shown");
+
             }
+
           }
+
         }
+
+    
 
         // hookup for slidy
+
         if (window.w3c_slidy) {
+
           window.w3c_slidy.add_observer(function (slide_num) {
+
             // slide_num starts at position 1
+
             fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
           });
+
         }
 
+    
+
       })();
+
     </script>
+
+    
 
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1207,18 +1451,7 @@ Repositorios códigos UnalR
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1250,7 +1483,47 @@ Repositorios códigos UnalR
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1287,7 +1560,11 @@ Repositorios códigos UnalR
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

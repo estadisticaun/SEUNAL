@@ -17,7 +17,6 @@ editor: visual
 library(UnalData)
 ```
 
-
 ## QR de la presentación
 
 <br>
@@ -42,7 +41,7 @@ El Sistema de Estadísticas de la UNAL está conformado por los instrumentos y l
 
 <br>
 
-::: columns
+::::: columns
 ::: {.column width="40%"}
 [![](Imagenes/PlanE.jpg)](https://estadisticaun.github.io/PlanE/)
 :::
@@ -79,7 +78,7 @@ Enlace Web
 
 [https://estadisticaun.github.io/PlanE/](https://estadisticaun.github.io/PlanE/){target="_blank"} <br>
 :::
-:::
+:::::
 
 ## Conceptualización (C) {.center}
 
@@ -89,7 +88,7 @@ Enlace Web
 
 Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y disposición de estadísticas e indicadores en el contexto público, principalmente.
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 [![](Imagenes/GesInforma.jpg){height="470"}](https://estadisticaun.github.io/L_Conceptual/)
 :::
@@ -97,7 +96,7 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 ::: {.column width="50%"}
 [![](Imagenes/EstadisticasInd.jpg){height="470"}](https://estadisticaun.github.io/L_Conceptual1/)
 :::
-:::
+:::::
 
 ## Producción Estadística (P) {.center}
 
@@ -123,7 +122,7 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 
 <br>
 
-::: columns
+::::: columns
 ::: {.column width="70%"}
 [![](Imagenes/PaginaEsts.jpg){height="400"}](https://estadisticas.unal.edu.co/home/)
 :::
@@ -135,13 +134,13 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 -   Boletines estadísticos.
 -   Acceso a datos abiertos.
 :::
-:::
+:::::
 
 ## Mecanismos de Difusión {.smaller}
 
 <h3>Dashboards</h3>
 
-::: columns
+::::: columns
 ::: {.column width="65%"}
 [![](Imagenes/PaginaEsts.jpg){height="300"}](https://estadisticas.unal.edu.co/home/)
 
@@ -161,13 +160,13 @@ Nivel de desagregación
 
 -   Información disponible, por nivel de análisis, desde múltiples perspectivas: desagregaciones temporales, temáticas y geográficas territoriales.
 :::
-:::
+:::::
 
 ## Mecanismos de Difusión {.smaller}
 
 <h3>Boletines Web Estadísticos - Presente</h3>
 
-::: columns
+::::: columns
 ::: {.column width="65%"}
 [![](Imagenes/Boletines.png){height="450"}](https://estadisticas.unal.edu.co/home/)
 :::
@@ -189,13 +188,13 @@ Construcción y/o actualización de 7 boletínes estadísticos.
 -   [Boletín Sede Orinoquía](https://estadisticaun.github.io/BoletinOrinoquia/){target="_blank"}
 -   [Boletín Sede Tumaco](https://estadisticaun.github.io/BoletinTumaco/){target="_blank"}
 :::
-:::
+:::::
 
 ## Linea 2. <br>Gestión y publicación de datos abiertos de la UNAL. {.center}
 
 ## Datos Abiertos de la UNAL
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 <br>
 
@@ -218,17 +217,17 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 -   [Docentes de Carrera](https://www.datos.gov.co/Educaci-n/Microdatos-Docentes-de-Carrera-UNAL/uvhe-aufw/about_data){preview-link="false" target="_blank"}
 -   [Personal Administrativo](https://www.datos.gov.co/Educaci-n/Microdatos-Personal-Administrativo-UNAL/6rvy-hipa/about_data){preview-link="false" target="_blank"}
 :::
-:::
+:::::
 
 ## Linea 3. <br>Gestión y disposición de datos para rankings. {.center}
 
----
+------------------------------------------------------------------------
 
 ### Los Rankings en el escenario de la UNAL
 
 ![](Imagenes/RankingsC.png){fig-align="center"}
 
----
+------------------------------------------------------------------------
 
 ### Cadena de valor gestión y disposición de datos para rankings
 
@@ -238,47 +237,47 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 ## Linea 4. <br>4. Gestión de datos para el Ministerio de Educación Nacional MEN y otras entidades públicas. {.center}
 
----
+------------------------------------------------------------------------
 
 ### Reporte/Carga de datos al Ministerio de Educación Nacional - MEN
 
 ![](Imagenes/SNIES1.png){fig-align="center"}
 
----
+------------------------------------------------------------------------
 
 ### Rol del Área Estadística en el reporte de datos al MEN
 
 ![](Imagenes/SNIES2.png){fig-align="center"}
 
----
+------------------------------------------------------------------------
 
 ### Reporte/Carga de datos a otras entidades
 
 ![](Imagenes/SNIES3.png){fig-align="center"}
 
----
+------------------------------------------------------------------------
 
 ## Linea 5. <br>Proceso Estadístico Institucional {.center}
 
----
+------------------------------------------------------------------------
+
 ### Sistema de Calidad Institucional (SIGA) + NTCPE 1000
 
 <br>
 
 #### [Sistema Integrado de Gestión Académica, Administrativa y Ambiental - SIGA]()
-* **Proceso Direccionamiento Institucional**
-  * 4 procedimientos e instructivos
+
+-   **Proceso Direccionamiento Institucional**
+    -   4 procedimientos e instructivos
 
 #### [Norma Técnica de Calidad del Proceso Estadístico-NTCPE 1000](https://www.dane.gov.co/files/sen/normatividad/NTC-Proceso-Estadistico-PE-1000-2020.pdf)
 
-* Armonizar proceso estadístico - SIGA y NTCPE 1000
-* Certificación de calidad en el Marco de la NTCPE 1000.
-
+-   Armonizar proceso estadístico - SIGA y NTCPE 1000
+-   Certificación de calidad en el Marco de la NTCPE 1000.
 
 ## Herramientas Tecnológicas (T) {.center}
 
 ![](Imagenes/Tecnologia.png){fig-align="center"}
-
 
 ## Arquitectura Tecnológica Ideal {.center}
 
@@ -286,8 +285,7 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 ## Herramientas Tecnológicas Para la Gestión de Datos {.center}
 
-![](Imagenes/Gráfica 11.png){fig-align="center"}
-
+![](Imagenes/Gráfica%2011.png){fig-align="center"}
 
 ## Arquitectura Tecnológica Actual {.center}
 
@@ -299,7 +297,7 @@ La UNAL cuenta con los siguientes conjuntos de datos publicados.
 
 <br>
 
-::: columns
+::::: columns
 ::: {.column width="30%"}
 [![](Imagenes/UnalData.png){fig-align="left" height="180"}](https://github.com/estadisticaun/UnalData)
 
@@ -313,11 +311,11 @@ N = `r format(nrow(UnalData::Aspirantes)+ nrow(UnalData::Matriculados)+nrow(Unal
 ::: {.column width="70%"}
 El paquete de datos [UnalData](https://github.com/estadisticaun/UnalData){preview-link="false" target="_blank"} almacena, en un entorno privado, desde el año 2008, el total de microdatos que sirven de fuente para la consolidación de las estadísticas oficiales y la publicación de microdatos en el portal de datos abiertos del Estado.
 :::
-:::
+:::::
 
 ## El Paquete de R UnalR
 
-::: columns
+::::: columns
 ::: {.column width="35%"}
 [![](Imagenes/UnalR.png)](https://estadisticaun.github.io/UnalR/index.html)
 
@@ -338,61 +336,75 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 [https://estadisticaun.github.io/UnalR/index.html](https://estadisticaun.github.io/UnalR/index.html){target="_blank"} <br>
 
 <h6>Repositorios códigos UnalR</h6>
+
 [CRAN](https://cran.r-project.org/web/packages/UnalR/index.html) y [GitHub](https://github.com/estadisticaun/UnalR)
 :::
+:::::
+
+
+## Ejemplo Uso Paquete Unal R {.smaller}
+
+::: panel-tabset
+
+### Serie 1 - highcharter
+
+```{r}
+#| echo: TRUE
+#| code-summary: "Ver código"
+
+library(UnalR)
+
+Plot.Series(
+  datos     = ejConsolidadoGrad,
+  categoria = "SEXO",
+  invertir  = TRUE,
+  colores   = c("#8CC63F", "#0071BC"),
+  titulo    = "Evolución del Número de Graduados por Sede",
+  labelY    = "N\u00famero de Graduados",
+  libreria  = "highcharter")
+
+```
+
+
+
+### Serie 2 - plotly
+
+```{r}
+#| echo: TRUE
+#| code-summary: "Ver código"
+
+Plot.Series(
+  datos     = ejConsolidadoGrad,
+  categoria = "SEXO",
+  invertir  = TRUE,
+  colores   = c("#8CC63F", "#0071BC"),
+  titulo    = "Evolución del Número de Graduados por Sede",
+  labelY    = "N\u00famero de Graduados",
+  libreria  = "plotly")
+```
+
+### Serie 3 - ggplot2
+
+```{r}
+#| echo: TRUE
+#| code-summary: "Ver código"
+
+Plot.Series(
+  datos     = ejConsolidadoGrad,
+  categoria = "SEXO",
+  invertir  = TRUE,
+  colores   = c("#8CC63F", "#0071BC"),
+  titulo    = "Evolución del Número de Graduados por Sede",
+  labelY    = "N\u00famero de Graduados",
+  libreria  = "highcharter",
+  estatico  = TRUE)
+
+```
+
+
+
+
 :::
-
-## R en el Sistema Estadístico de la UNAL - Un Lenguaje Escalable {.center}
-
-![](Imagenes/Rprotagonista.png){fig-align="center" height="520"}
-
-<!-- ## Ejemplos Uso Paquete Unal R {.smaller} -->
-
-<!-- ::: panel-tabset -->
-
-<!-- ### Serie 1 -->
-
-<!-- ```{r} -->
-
-<!-- #| echo: true -->
-
-<!-- #| code-fold: true -->
-
-<!-- #| code-summary: "Ver código" -->
-
-<!-- # Librerías requeridas -->
-
-<!-- library(tidyverse) -->
-
-<!-- library(UnalData) -->
-
-<!-- library(UnalR) -->
-
-<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
-
-<!--         frecuencia = list(c(2009:2023), c(1:2)), -->
-
-<!--         intervalo = list(c(2009, 1), c(2023, 1)), -->
-
-<!--         datos = UnalData::Matriculados, -->
-
-<!--         textNA = "Sin información") %>%  -->
-
-<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
-
-<!--               colores = c("#8cc63f", "#CC241D"),  -->
-
-<!--               titulo = "Evolución histórica del número total de matriculados",  -->
-
-<!--               labelY = "Número de matriculados", -->
-
-<!--               ylim = c(0,NaN), -->
-
-<!--               libreria = c("highcharter"),  -->
-
-<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE"))  -->
-
-<!-- ``` -->
 
 <!-- ### Serie 2 -->
 
@@ -412,7 +424,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!-- library(UnalR) -->
 
-<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
+<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, -->
 
 <!--         frecuencia = list(c(2009:2023), c(1:2)), -->
 
@@ -420,21 +432,21 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!--         datos = UnalData::Matriculados, -->
 
-<!--         textNA = "Sin información") %>%  -->
+<!--         textNA = "Sin información") %>% -->
 
-<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
+<!--    Plot.Series(categoria = "TIPO_NIVEL", -->
 
-<!--               colores = c("#8cc63f", "#CC241D"),  -->
+<!--               colores = c("#8cc63f", "#CC241D"), -->
 
-<!--               titulo = "Evolución histórica del número total de matriculados",  -->
+<!--               titulo = "Evolución histórica del número total de matriculados", -->
 
 <!--               labelY = "Número de matriculados", -->
 
 <!--               ylim = c(0,NaN), -->
 
-<!--               libreria = c("plotly"),  -->
+<!--               libreria = c("plotly"), -->
 
-<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE"))  -->
+<!--               estilo = list(hc.Tema = 1, hc.Slider = FALSE, hc.Credits = "DNPE")) -->
 
 <!-- ``` -->
 
@@ -456,7 +468,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!-- library(UnalR) -->
 
-<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE,  -->
+<!-- Agregar(TIPO_NIVEL ~ YEAR + SEMESTRE, -->
 
 <!--         frecuencia = list(c(2009:2023), c(1:2)), -->
 
@@ -464,11 +476,11 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!--         datos = UnalData::Matriculados, -->
 
-<!--         textNA = "Sin información") %>%  -->
+<!--         textNA = "Sin información") %>% -->
 
-<!--    Plot.Series(categoria = "TIPO_NIVEL",  -->
+<!--    Plot.Series(categoria = "TIPO_NIVEL", -->
 
-<!--               colores = c("#8cc63f", "#CC241D"),  -->
+<!--               colores = c("#8cc63f", "#CC241D"), -->
 
 <!--               titulo = "Evolución histórica del número total de matriculados", -->
 
@@ -496,21 +508,21 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!-- #| echo: false -->
 
-<!-- Saber_Unal <- UnalData::SaberPro %>%  -->
+<!-- Saber_Unal <- UnalData::SaberPro %>% -->
 
-<!--   select(Año = YEAR, Sexo = SEXO,  -->
+<!--   select(Año = YEAR, Sexo = SEXO, -->
 
 <!--          COD_DEP_PROC, -->
 
 <!--          COD_CIU_PROC, -->
 
-<!--          Estrato = ESTRATO_ORIG,  -->
+<!--          Estrato = ESTRATO_ORIG, -->
 
-<!--          Sede = SEDE_NOMBRE_ADM,  -->
+<!--          Sede = SEDE_NOMBRE_ADM, -->
 
 <!--          Admision = TIPO_ADM, -->
 
-<!--          starts_with("PUNT")) %>%  -->
+<!--          starts_with("PUNT")) %>% -->
 
 <!--   rename(Global = PUNTAJE_GLOBAL, -->
 
@@ -522,9 +534,9 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!--          Lectura = PUNT_LECT_CRIT, -->
 
-<!--          Cuantitativo = PUNT_RAZO_CUANT) %>%  -->
+<!--          Cuantitativo = PUNT_RAZO_CUANT) %>% -->
 
-<!--   na.omit() %>%  -->
+<!--   na.omit() %>% -->
 
 <!--   filter(Global != 0, Ciudadanas != 0, Escrita != 0, -->
 
@@ -568,7 +580,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!--   naTo0    = FALSE, -->
 
-<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   cortes        = c(0, 160, 170, 180, Inf), -->
 
 <!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
 
@@ -614,7 +626,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!--   naTo0    = FALSE, -->
 
-<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   cortes        = c(0, 160, 170, 180, Inf), -->
 
 <!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
 
@@ -660,7 +672,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!--   naTo0    = FALSE, -->
 
-<!--   cortes        = c(0, 160, 170, 180, Inf),   -->
+<!--   cortes        = c(0, 160, 170, 180, Inf), -->
 
 <!--   colores       = c("red", "#fc9272", "#31a354", "#10F235"), -->
 
@@ -670,7 +682,7 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!--     Style = "Intervalo",  Theme = 5, anchoBorde = 0.2, -->
 
-<!--     labelX = "",  -->
+<!--     labelX = "", -->
 
 <!--     labelY = "", -->
 
@@ -738,6 +750,13 @@ Conjunto de funciones orientadas a la visualización <u>estática e interactiva<
 
 <!-- ::: -->
 
+
+
+
+## R en el Sistema Estadístico de la UNAL - Un Lenguaje Escalable {.center}
+
+![](Imagenes/Rprotagonista.png){fig-align="center" height="520"}
+
 ## Cultura Estadística (C) {.center}
 
 ![](Imagenes/Cultura.png){fig-align="center" height="580"}
@@ -783,9 +802,9 @@ Recursos Económicos
 
 Disposición de recursos financieros de inversión durante los últimos 2 Planes Globales de Desarrollo.
 
-  - Proyecto 528: **Fortalecimiento de la Actividad Estadística Institucional**
- 
-  - Proyecto 613-C2: [Fortalecimiento del Sistema Integrado de Estadísticas e Indicadores de la UNAL.](https://bpun2022.unal.edu.co/proyectos-componentes/613-C2/ver)
+-   Proyecto 528: **Fortalecimiento de la Actividad Estadística Institucional**
+
+-   Proyecto 613-C2: [Fortalecimiento del Sistema Integrado de Estadísticas e Indicadores de la UNAL.](https://bpun2022.unal.edu.co/proyectos-componentes/613-C2/ver)
 
 ## Soportes Modelo P2C-T {.center}
 
@@ -799,10 +818,9 @@ Talento Humano
 
 La gestión estadística en la UNAL, a la fecha, es apoyada a través de 3 estrategias institucionales de disposición del talento humano requerido.
 
-  - Funcionarios administrativos
-  - Contratistas
-  - Estudiantes auxiliares
-
+-   Funcionarios administrativos
+-   Contratistas
+-   Estudiantes auxiliares
 
 ## Información de Contacto {.smaller .center}
 

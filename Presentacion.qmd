@@ -146,7 +146,7 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 
 <h6>Dashboards disponibles</h6>
 
-[Aspirantes](https://estadisticas.unal.edu.co/Aspiranres/){target="_blank"}, [Admitidos](https://estadisticas.unal.edu.co/Admitidos/){target="_blank"}, [Matriculados](https://estadisticas.unal.edu.co/Matriculados/){target="_blank"}, [Matriculados Primera Vez](https://estadisticas.unal.edu.co/MatriculadosPV/){target="_blank"}, [Graduados](https://estadisticas.unal.edu.co/Graduados/){target="_blank"}, [Saber Pro](https://estadisticas.unal.edu.co/SaberPro/){target="_blank"}, [Docentes](https://estadisticas.unal.edu.co/Docentes/){target="_blank"} y [Personal Administrativo](https://estadisticas.unal.edu.co/Administrativos/){target="_blank"}.
+[Aspirantes](https://estadisticas.unal.edu.co/Aspirantes/){target="_blank"}, [Admitidos](https://estadisticas.unal.edu.co/Admitidos/){target="_blank"}, [Matriculados](https://estadisticas.unal.edu.co/Matriculados/){target="_blank"}, [Matriculados Primera Vez](https://estadisticas.unal.edu.co/MatriculadosPV/){target="_blank"}, [Graduados](https://estadisticas.unal.edu.co/Graduados/){target="_blank"}, [Saber Pro](https://estadisticas.unal.edu.co/SaberPro/){target="_blank"}, [Docentes](https://estadisticas.unal.edu.co/Docentes/){target="_blank"} y [Personal Administrativo](https://estadisticas.unal.edu.co/Administrativos/){target="_blank"}.
 :::
 
 ::: {.column width="35%"}

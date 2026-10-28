@@ -109,19 +109,24 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 ```{r}
 #| echo: FALSE
 
-# 1. Estructura de datos actualizada
+# 1. Estructura de datos completa
 datos_arbol <- data.frame(
   Capa_0 = c(
-    rep("Descriptivo", 24),
+    rep("Descriptivo", 25),
     "Explicativo",
     "Predictivo",
     "Evaluativo"
   ),
+  Capa_Tipo = c(
+    rep("Recurrente", 24),
+    "Adaptativo",
+    NA, NA, NA
+  ),
   Capa_1 = c(
     rep("Estadísticas", 12),
     rep("Indicadores", 7),
-    rep("Nat. Matemática", 5),
-    NA, NA, NA
+    rep("Nat. matemática", 5),
+    NA, NA, NA, NA
   ),
   Capa_2 = c(
     # Estadísticas (12)
@@ -129,7 +134,7 @@ datos_arbol <- data.frame(
     rep("Extrínsecas", 7),
     
     # Indicadores (7)
-    "Cualitativos vs cuantitativos",
+    "Cualitativos vs\ncuantitativos",
     "Temáticos",
     "Según jerarquía",
     rep("De gestión", 4),
@@ -137,12 +142,12 @@ datos_arbol <- data.frame(
     # Naturaleza matemática (5)
     "Medidas estadísticas", "Frecuencias", "Razones", "Tasas", "Índices",
     
-    # Ramas sin desglose
-    NA, NA, NA
+    # Ramas vacías
+    NA, NA, NA, NA
   ),
   Capa_3 = c(
     # Intrínsecas
-    "Datos", "Cifras agregadas", "Desagregaciones", "Visualización", "Divulgación y comunicación",
+    "Datos", "Cifras agregadas", "Desagregaciones", "Visualización", "Divulgación y\ncomunicación",
     # Extrínsecas
     "Incluyentes", "Comparables", "Legales y éticas", "Transparentes", "Uso de TIC", "Metadatos", "Proceso estadístico",
     # Indicadores
@@ -150,17 +155,18 @@ datos_arbol <- data.frame(
     "Insumos", "Actividades", "Producto", "Resultado",
     # Naturaleza matemática
     NA, NA, NA, NA, NA,
-    # Ramas sin desglose
-    NA, NA, NA
+    # Ramas vacías
+    NA, NA, NA, NA
   )
 )
+
 
 # 2. Generación del árbol con tamaño de nodos predeterminado
 collapsibleTree(
   datos_arbol,
-  hierarchy = c("Capa_0", "Capa_1", "Capa_2", "Capa_3"),
+  hierarchy = c("Capa_0", "Capa_Tipo", "Capa_1", "Capa_2", "Capa_3"),
   root = "Estadística",
-  width = 1200,
+  width = 1800,
   height = 600,
   fontSize = 18,
   collapsed = TRUE,
@@ -169,9 +175,6 @@ collapsibleTree(
 
 
 ```
-
-
-
 
 ## Líneas de Producción Estadística en la UNAL {.smaller}
 

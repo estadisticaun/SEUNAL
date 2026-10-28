@@ -15,6 +15,7 @@ editor: visual
 
 ```{r}
 library(UnalData)
+library(collapsibleTree)
 ```
 
 ## QR de la presentación
@@ -101,6 +102,76 @@ Aportes conceptuales de la Universidad Nacional de Colombia parala gestión y di
 ## Producción Estadística (P) {.center}
 
 ![](Imagenes/Produccion.png){fig-align="center"}
+
+## Alcance de la Estadística en la UNAL
+
+
+```{r}
+#| echo: FALSE
+
+# 1. Estructura de datos actualizada
+datos_arbol <- data.frame(
+  Capa_0 = c(
+    rep("Descriptivo", 24),
+    "Explicativo",
+    "Predictivo",
+    "Evaluativo"
+  ),
+  Capa_1 = c(
+    rep("Estadísticas", 12),
+    rep("Indicadores", 7),
+    rep("Nat. Matemática", 5),
+    NA, NA, NA
+  ),
+  Capa_2 = c(
+    # Estadísticas (12)
+    rep("Intrínsecas", 5),
+    rep("Extrínsecas", 7),
+    
+    # Indicadores (7)
+    "Cualitativos vs cuantitativos",
+    "Temáticos",
+    "Según jerarquía",
+    rep("De gestión", 4),
+    
+    # Naturaleza matemática (5)
+    "Medidas estadísticas", "Frecuencias", "Razones", "Tasas", "Índices",
+    
+    # Ramas sin desglose
+    NA, NA, NA
+  ),
+  Capa_3 = c(
+    # Intrínsecas
+    "Datos", "Cifras agregadas", "Desagregaciones", "Visualización", "Divulgación y comunicación",
+    # Extrínsecas
+    "Incluyentes", "Comparables", "Legales y éticas", "Transparentes", "Uso de TIC", "Metadatos", "Proceso estadístico",
+    # Indicadores
+    NA, NA, NA,
+    "Insumos", "Actividades", "Producto", "Resultado",
+    # Naturaleza matemática
+    NA, NA, NA, NA, NA,
+    # Ramas sin desglose
+    NA, NA, NA
+  )
+)
+
+# 2. Generación del árbol con tamaño de nodos predeterminado
+collapsibleTree(
+  datos_arbol,
+  hierarchy = c("Capa_0", "Capa_1", "Capa_2", "Capa_3"),
+  root = "Estadística",
+  width = 1200,
+  height = 600,
+  fontSize = 18,
+  collapsed = TRUE,
+  fill = "green"
+)
+
+
+```
+
+
+
 
 ## Líneas de Producción Estadística en la UNAL {.smaller}
 
